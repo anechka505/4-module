@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд — Фестиваль космических животных</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="page-guide">
+
+    <nav class="top-nav">
+        <a class="top-nav__logo" href="index.html">
+            <img src="images/main-logo-rbipet.svg" alt="рбипет">
+        </a>
+        <ul class="top-nav__list">
+            <li><a class="top-nav__link" href="about.html">О&nbsp;фесте</a></li>
+            <li><a class="top-nav__link" href="program.html">Программа</a></li>
+            <li><a class="top-nav__link top-nav__link--active" href="guide.html">Гайд</a></li>
+            <li><a class="top-nav__link" href="tickets.html">Билеты</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="guide-section__title">Куда сходить?</h1>
+
+    <section class="video-block">
+        <video class="video-block__video"
+               id="guide-video"
+               src="video/guide-intro.mp4"
+               poster="images/guide-video-poster.png"
+               preload="metadata"
+               playsinline></video>
+
+        <button class="video-block__play" id="guide-video-play" type="button" aria-label="Воспроизвести видео">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+                <polygon points="25,12 88,50 25,88" fill="#4bdeff"/>
+            </svg>
+        </button>
+    </section>
+
+    <section class="map-block">
+        <img src="images/guide-map.svg" alt="Карта фестиваля">
+    </section>
+
+    <section class="immersion">
+        <img class="immersion__bg" src="images/guide-immersion-bg.png" alt="">
+        <h2 class="immersion__title">Гайд для&nbsp;полного<br>погружения</h2>
+        <p class="immersion__text">
+            Покупай наш гайд по&nbsp;фестивалю, выполняй интересные задания, узнавай тайны и&nbsp;получай призы на&nbsp;кассе!
+        </p>
+    </section>
+
+    <button class="buy-guide" id="buy-guide-btn" type="button">
+        <span class="buy-guide__text">Купить гайд</span>
+    </button>
+
+    <footer class="main-footer">
+        <span class="main-footer__text">Сафонова А.</span>
+        <span class="main-footer__text">Дизайн и&nbsp;продвижение</span>
+        <span class="main-footer__text">Куратор: Е.&nbsp;Умнова</span>
+    </footer>
+
+    <div class="popup-overlay" id="popup-overlay" hidden>
+        <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+            <button class="popup__close" id="popup-close" type="button" aria-label="Закрыть">
+                <span class="popup__close-x"></span>
+            </button>
+
+            <h2 class="popup__title" id="popup-title">
+                Оставьте вашу почту&nbsp;—<br>мы отправим чек на&nbsp;оплату
+            </h2>
+
+            <form class="popup__form" id="popup-form" novalidate>
+                <div class="popup__input-wrap">
+                    <input class="popup__input"
+                           type="email"
+                           id="popup-email"
+                           name="email"
+                           placeholder="example@mail.ru"
+                           required>
+                </div>
+                <button class="popup__submit" type="submit" aria-label="Отправить">
+
+                    <img src="images/popup-arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="notification" id="notification" hidden>
+        <span class="notification__text">Спасибо! Все&nbsp;прошло успешно!</span>
+    </div>
+
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/guide.js"></script>
+</body>
+</html>

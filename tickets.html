@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билеты — Фестиваль космических животных</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="page-tickets">
+
+    <nav class="top-nav">
+        <a class="top-nav__logo" href="index.html">
+            <img src="images/main-logo-rbipet.svg" alt="рбипет">
+        </a>
+        <ul class="top-nav__list">
+            <li><a class="top-nav__link" href="about.html">О&nbsp;фесте</a></li>
+            <li><a class="top-nav__link" href="program.html">Программа</a></li>
+            <li><a class="top-nav__link" href="guide.html">Гайд</a></li>
+            <li><a class="top-nav__link top-nav__link--active" href="tickets.html">Билеты</a></li>
+        </ul>
+    </nav>
+
+    <section class="tickets-content">
+        <img class="tickets-content__svg" src="images/tickets-content-v2.svg" alt="">
+
+        <button class="ticket-plus" id="ticket-plus-adult" type="button" aria-label="Купить взрослый билет">
+            <img src="images/ticket-plus-adult.svg" alt="">
+        </button>
+        <button class="ticket-plus" id="ticket-plus-baby" type="button" aria-label="Купить билет малыша">
+            <img src="images/ticket-plus-baby.svg" alt="">
+        </button>
+        <button class="ticket-plus" id="ticket-plus-child" type="button" aria-label="Купить детский билет">
+            <img src="images/ticket-plus-child.svg" alt="">
+        </button>
+    </section>
+
+    <footer class="main-footer">
+        <span class="main-footer__text">Сафонова А.</span>
+        <span class="main-footer__text">Дизайн и&nbsp;продвижение</span>
+        <span class="main-footer__text">Куратор: Е.&nbsp;Умнова</span>
+    </footer>
+
+    <div class="popup-overlay" id="popup-overlay" hidden>
+        <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+            <button class="popup__close" id="popup-close" type="button" aria-label="Закрыть">
+                <span class="popup__close-x"></span>
+            </button>
+
+            <h2 class="popup__title" id="popup-title">
+                Оставьте вашу почту&nbsp;—<br>мы отправим чек на&nbsp;оплату
+            </h2>
+
+            <form class="popup__form" id="popup-form" novalidate>
+                <div class="popup__input-wrap">
+                    <input class="popup__input"
+                           type="email"
+                           id="popup-email"
+                           name="email"
+                           placeholder="example@mail.ru"
+                           required>
+                </div>
+                <button class="popup__submit" type="submit" aria-label="Отправить">
+                    <img src="images/popup-arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="notification" id="notification" hidden>
+        <span class="notification__text">Спасибо! Все&nbsp;прошло успешно!</span>
+    </div>
+
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/tickets.js"></script>
+</body>
+</html>

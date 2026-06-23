@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Фестиваль космических животных</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="page-main">
+
+
+    <nav class="top-nav">
+        <a class="top-nav__logo" href="index.html">
+            <img src="images/main-logo-rbipet.svg" alt="рбипет">
+        </a>
+        <ul class="top-nav__list">
+            <li><a class="top-nav__link" href="about.html">О&nbsp;фесте</a></li>
+            <li><a class="top-nav__link" href="program.html">Программа</a></li>
+            <li><a class="top-nav__link" href="guide.html">Гайд</a></li>
+            <li><a class="top-nav__link" href="tickets.html">Билеты</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="hero-blob">
+        <img src="images/main-hero-blob.svg" alt="">
+    </div>
+
+
+    <div class="hero-plate">
+        <img class="hero-plate__bg" src="images/main-hero-plate.svg" alt="">
+        <h1 class="hero-plate__title">ФЕСТИВАЛЬ<br>КОСМИЧЕСКИХ<br>ЖИВОТНЫХ</h1>
+    </div>
+
+
+    <!-- Info-card = «билетик» феста. Поделён по пунктирной перфорации
+         на две половины — корешок слева и основная часть справа.
+         Клик/наведение на правую часть → она «отрывается» по перфорации. -->
+    <div class="info-card" id="info-card">
+        <!-- Левая половина-корешок: не двигается. -->
+        <div class="info-card__half info-card__half--left">
+            <img class="info-card__bg" src="images/main-info-card-bg.svg" alt="">
+            <span class="info-card__small info-card__small--left">Для&nbsp;детей<br>от&nbsp;3-х лет</span>
+        </div>
+        <!-- Правая половина: при клике отрывается с лёгким поворотом. -->
+        <div class="info-card__half info-card__half--right">
+            <img class="info-card__bg" src="images/main-info-card-bg.svg" alt="">
+            <span class="info-card__small info-card__small--mid">Первый зоокосмический<br>фестиваль России</span>
+            <span class="info-card__small info-card__small--right">Незабываемый опыт<br>и&nbsp;качественное обучение</span>
+            <div class="info-card__divider"></div>
+            <p class="info-card__date">3–6&nbsp;ИЮЛЯ</p>
+            <p class="info-card__time">08:00–22:00</p>
+        </div>
+    </div>
+
+
+    <!-- На мобайле текст разбит на 4 строки <br class="entry-fee__br">, как на фигме.
+         На планшете и десктопе .entry-fee__br скрывается через display:none — текст
+         собирается в одну строку как в тех макетах. -->
+    <p class="entry-fee">вход<br class="entry-fee__br">детям<br class="entry-fee__br">до&nbsp;9&nbsp;лет<br class="entry-fee__br">300₽</p>
+
+
+    <a class="buy-button" href="tickets.html">
+        <span class="buy-button__text">Купить билет</span>
+    </a>
+
+
+    <section class="quiz" id="quiz">
+        <h2 class="quiz__title">Стань знатоком</h2>
+        <a class="quiz__arrow" href="about.html" aria-label="Узнать больше о фесте">
+            <img src="images/main-quiz-arrow.svg" alt="">
+        </a>
+        <div class="quiz__character">
+            <img src="images/main-hero-character.png" alt="Космическое существо">
+        </div>
+        <div class="quiz__card" id="quiz-card">
+            <p class="quiz__question" id="quiz-question">Как называется<br>это космическое существо?</p>
+            <div class="quiz__options" id="quiz-options">
+                <!-- кнопки опроса рисуются JS из массива в javascript/main.js -->
+            </div>
+            <p class="quiz__feedback" id="quiz-feedback"></p>
+        </div>
+    </section>
+
+
+    <section class="cosmos">
+        <h2 class="cosmos__title">Попробуй космос</h2>
+        <a class="cosmos__arrow" href="program.html" aria-label="К программе">
+            <img src="images/main-quiz-arrow.svg" alt="">
+        </a>
+        <p class="cosmos__text">
+            На&nbsp;территории фестиваля находится кафе,<br>
+            где&nbsp;ты&nbsp;сможешь попробовать наивкуснейшую<br>
+            пищу прямиком из&nbsp;космоса! Все&nbsp;блюда заведения не&nbsp;только подходят для&nbsp;питания землян, но&nbsp;и&nbsp;очень для&nbsp;них&nbsp;полезны!
+        </p>
+        <div class="cosmos__photo cosmos__photo--chair">
+            <img src="images/main-cosmos-chair.png" alt="Космическое кафе">
+        </div>
+        <div class="cosmos__photo cosmos__photo--character">
+            <img src="images/main-cosmos-character.png" alt="Космический персонаж">
+        </div>
+    </section>
+
+
+    <h2 class="cosmonaut-title">Будь космонавтом</h2>
+    <!-- Стрелка теперь открывает попап с отложкой мерча, а не ведёт на /guide.html -->
+    <button class="cosmonaut-arrow" id="cosmonaut-arrow-btn" type="button" aria-label="Отложить мерч">
+        <img src="images/back-arrow.svg" alt="">
+    </button>
+    <img class="cosmonaut-lunchbox" src="images/main-merch-lunchbox.png" alt="Космический ланчбокс">
+    <img class="cosmonaut-cup" src="images/main-merch-cup.png" alt="Космическая кружка">
+    <!-- Жёсткие <br>'ы повторяют переносы строк из Figma (нода 56:666):
+         4 строки центрированного Fira Mono. На десктопе тоже укладывается в 4 строки.
+         cosmonaut-text__br--mobile — дополнительный перенос только для мобайла,
+         чтобы «Эти» начиналось с новой строки после «вещей.». -->
+    <p class="cosmonaut-text">
+        В&nbsp;нашем магазине можно приобрести крутой мерч!<br>
+        Только представь, сколько у&nbsp;тебя может быть<br>
+        космических вещей.<br class="cosmonaut-text__br--mobile"> Эти космические товары дадут<br>
+        тебе почувствовать себя настоящим космонавтом!
+    </p>
+
+
+    <footer class="main-footer">
+        <span class="main-footer__text">Сафонова А.</span>
+        <span class="main-footer__text">Дизайн и&nbsp;продвижение</span>
+        <span class="main-footer__text">Куратор: Е.&nbsp;Умнова</span>
+    </footer>
+
+
+    <!-- ===== Попап «Отложить мерч» — копия гайдовского попапа с другим текстом ===== -->
+    <div class="popup-overlay" id="merch-popup-overlay" hidden>
+        <div class="popup" role="dialog" aria-modal="true" aria-labelledby="merch-popup-title">
+            <button class="popup__close" id="merch-popup-close" type="button" aria-label="Закрыть">
+                <span class="popup__close-x"></span>
+            </button>
+
+            <h2 class="popup__title" id="merch-popup-title">
+                Оставьте вашу почту&nbsp;—<br>мы отложим мерч для&nbsp;вас
+            </h2>
+
+            <form class="popup__form" id="merch-popup-form" novalidate>
+                <div class="popup__input-wrap">
+                    <input class="popup__input"
+                           type="email"
+                           id="merch-popup-email"
+                           name="email"
+                           placeholder="example@mail.ru"
+                           required>
+                </div>
+                <button class="popup__submit" type="submit" aria-label="Отправить">
+                    <img src="images/popup-arrow.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Уведомление «Спасибо!» для главного попапа -->
+    <div class="notification" id="merch-notification" hidden>
+        <span class="notification__text">Спасибо! Все&nbsp;прошло успешно!</span>
+    </div>
+
+
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

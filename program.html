@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программа — Фестиваль космических животных</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body class="page-program">
+
+    <nav class="top-nav">
+        <a class="top-nav__logo" href="index.html">
+            <img src="images/main-logo-rbipet.svg" alt="рбипет">
+        </a>
+        <ul class="top-nav__list">
+            <li><a class="top-nav__link" href="about.html">О&nbsp;фесте</a></li>
+            <li><a class="top-nav__link top-nav__link--active" href="program.html">Программа</a></li>
+            <li><a class="top-nav__link" href="guide.html">Гайд</a></li>
+            <li><a class="top-nav__link" href="tickets.html">Билеты</a></li>
+        </ul>
+    </nav>
+
+    <section class="program" id="program">
+        <h1 class="program__title">Чем заняться?</h1>
+        <!-- Жёсткие переносы:
+             .desktop-intro-br — старый перенос, активен только на десктопе.
+             .program-intro-br — переносы под планшет (≤768) ровно как на фигма-рендере. -->
+        <p class="program__intro">
+            Думаешь, у&nbsp;нас можно только посмотреть<br class="program-intro-br">
+            на&nbsp;животных?<br class="desktop-intro-br"> А&nbsp;вот и&nbsp;нет! Предлагаем<br class="program-intro-br">
+            широкий и&nbsp;разнообразный выбор событий.<br class="program-intro-br">
+            От&nbsp;весёлых игр до&nbsp;обучающих мастер-классов.
+        </p>
+
+        <div class="program__list" id="program-list"></div>
+    </section>
+
+    <footer class="main-footer">
+        <span class="main-footer__text">Сафонова А.</span>
+        <span class="main-footer__text">Дизайн и&nbsp;продвижение</span>
+        <span class="main-footer__text">Куратор: Е.&nbsp;Умнова</span>
+    </footer>
+
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/program.js"></script>
+</body>
+</html>

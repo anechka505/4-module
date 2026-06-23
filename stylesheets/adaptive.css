@@ -1,0 +1,3840 @@
+
+
+/* ===== Скрываем мобильные/планшетные <br> на десктопе =====
+   На планшете / мобайле адаптива показываем display:inline в соответствующих блоках. */
+.entry-fee__br,
+.cosmonaut-text__br--mobile,
+.mobile-desc-br,
+.program-intro-br {
+    display: none;
+}
+
+
+/* ===== Переопределение переменных под мобайл ===== */
+@media (max-width: 768px) {
+
+    :root {
+        --side-padding: 4.85%;
+        --section-gap: 5vw;
+    }
+
+}
+
+
+/* ===== Шапка (мобайл) ===== */
+@media (max-width: 768px) {
+
+
+    .header__bar {
+        background: transparent;
+        height: auto;
+        padding: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .header__logo {
+        order: 1;
+        height: 6.22vw;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .header__logo img {
+        height: 3.98vw;
+    }
+
+
+    .header__coords {
+        display: flex;
+        order: 2;
+        align-items: center;
+        font-size: 2.47vw;
+        color: var(--pink);
+    }
+
+
+    .header__title {
+        order: 3;
+        flex: 0 0 100%;
+        background: var(--pink);
+        border-radius: 3.48vw;
+        height: 12.44vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 4.48vw;
+        line-height: 1.2;
+        white-space: nowrap;
+        padding: 0 3.73vw 0 5.22vw;
+    }
+
+}
+
+
+/* ===== Подвал (мобайл) ===== */
+@media (max-width: 768px) {
+
+    .footer {
+        padding-bottom: 11.26vw;
+    }
+
+
+    .footer__bar {
+        height: 7.71vw;
+        border-radius: 1.24vw;
+        padding: 0 3vw;
+        position: relative;
+        overflow: visible;
+    }
+
+
+    .footer__text {
+        font-size: 3.13vw;
+    }
+
+
+    .footer__text:nth-child(2) {
+        position: absolute;
+        top: calc(100% + 2.77vw);
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--pink);
+        white-space: nowrap;
+    }
+
+}
+
+
+/* ===== Баннеры (мобайл) ===== */
+@media (max-width: 768px) {
+
+    .banner__inner {
+        aspect-ratio: 362 / 76;
+    }
+
+    .banner__text {
+        font-size: 13.29vw;
+    }
+
+    .banner--1 .banner__logo {
+        height: 15.67vw;
+    }
+
+}
+
+
+/* ===== Игра 1 (мобайл) ===== */
+@media (max-width: 768px) {
+
+
+    .game1__inner {
+        aspect-ratio: 362 / 261;
+    }
+
+
+    .game1__hint-box {
+        left: 6.08%;
+        top: 4.60%;
+        width: 87.85%;
+        height: 18.77%;
+        border-radius: 3.48vw;
+        padding: 0 3.73vw 0 5.97vw;
+        justify-content: center;
+    }
+
+
+    .game1__hint-text {
+        font-size: 3.13vw;
+        color: var(--yellow);
+        width: 41.29vw;
+        text-align: center;
+    }
+
+
+    .game1__star--1 {
+        top: 51.75%;
+        left: 3.08%;
+        width: 11.51%;
+        height: 15.95%;
+        transform: rotate(33.71deg);
+    }
+
+    .game1__star--1:hover {
+        transform: rotate(33.71deg) scale(1.3);
+    }
+
+
+    .game1__star--2 {
+        top: 81.26%;
+        left: 79.33%;
+        width: 11.51%;
+        height: 15.95%;
+        transform: rotate(33.71deg);
+    }
+
+    .game1__star--2:hover {
+        transform: rotate(33.71deg) scale(1.3);
+    }
+
+
+    .game1__star--3 {
+        top: 38.82%;
+        left: 74.35%;
+        width: 11.51%;
+        height: 15.95%;
+        transform: rotate(11.1deg);
+    }
+
+    .game1__star--3:hover {
+        transform: rotate(11.1deg) scale(1.3);
+    }
+
+
+    .game1__dot {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .game1__constellation-lines line:not([data-guide]) {
+        stroke-width: 1vw;
+    }
+
+    .game1__state2-header {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    .game1__state2-title {
+        font-size: 9vw;
+    }
+
+    .game1__state2-subtitle {
+        font-size: 3.13vw;
+        max-width: 80vw;
+        margin-top: 1vw;
+    }
+
+    .game1__creature-name {
+        font-size: 2.8vw;
+        margin-top: 1vw;
+    }
+
+
+    .game1__inner.game1--state2-active {
+        aspect-ratio: 362 / 763;
+    }
+
+    .game1__state2 {
+        border-width: 0.83vw;
+        border-radius: 5.72vw;
+    }
+
+    .game1__state2-header {
+        position: absolute;
+        left: 26.52%;
+        top: 4.85%;
+        padding: 0;
+        text-align: center;
+        width: 46.69%;
+    }
+
+    .game1__state2-title {
+        font-size: 9.98vw;
+    }
+
+    .game1__state2-subtitle {
+        font-size: 2.80vw;
+        max-width: none;
+        width: 100%;
+        margin-top: 4.23vw;
+    }
+
+    #result-enibus {
+        left: 14.95%;
+        top: 43.81%;
+        width: 25.14%;
+    }
+
+    #result-beribus {
+        left: 63.84%;
+        top: 46.13%;
+        width: 22.38%;
+    }
+
+    #result-erobus {
+        left: 16.02%;
+        top: 77.85%;
+        width: 19.61%;
+    }
+
+    #result-shirobus {
+        left: 62.98%;
+        top: 80.35%;
+        width: 19.06%;
+    }
+
+    .game1__creature-name {
+        font-size: 2.97vw;
+    }
+
+    .game1__restart {
+        right: auto;
+        left: 85.91%;
+        top: 1.44%;
+        width: 11.05%;
+    }
+
+}
+
+
+/* ===== Игра 2 (мобайл) ===== */
+@media (max-width: 768px) {
+
+
+    .game2__inner {
+        aspect-ratio: 370 / 654;
+    }
+
+
+    .game2__left {
+        left: 0;
+        top: 0;
+        width: 97.30%;
+        height: 41.74%;
+        background-color: rgba(255, 109, 172, 0.16);
+        border: 0.83vw solid var(--pink);
+        border-radius: 3.48vw;
+        padding: 0;
+    }
+
+
+    .game2__hint-text {
+        position: absolute;
+        left: 21.39%;
+        top: 4.40%;
+        width: 53.89%;
+        font-size: 2.80vw;
+        color: var(--white);
+        text-align: center;
+    }
+
+
+    .game2__right {
+        display: block;
+        left: 0%;
+        top: 45.21%;
+        width: 97.57%;
+        height: 54.89%;
+        border: 0.89vw solid var(--pink);
+        border-radius: 3.48vw;
+        background: transparent;
+    }
+
+
+    .game2__bg {
+        top: 45.21%;
+        left: -7%;
+        width: 97.57%;
+        height: 54.89%;
+    }
+
+    .game2__receiver {
+        width: 7.36%;
+    }
+
+    .game2__receiver--pink {
+        left: 21.2%;
+        top: 56.4%;
+    }
+
+    .game2__receiver--yellow {
+        left: 21.2%;
+        top: 74.5%;
+    }
+
+    .game2__receiver--pinkdot {
+        left: 20.1%;
+        top: 91.3%;
+    }
+
+
+    .game2__capsule {
+        width: 2.5%;
+        height: 2.2%;
+        border-radius: 999px;
+    }
+
+
+    .game2__success {
+        left: 49.32%;
+        top: 22.15%;
+        font-size: 15.24vw;
+    }
+
+
+    .game2__restart {
+        left: 82.70%;
+        right: auto;
+        top: 1.88%;
+        width: 7%;
+    }
+
+    .game2__arrow--desktop { display: none; }
+    .game2__arrow--mobile  { display: block; }
+
+}
+
+
+/* ===== Игра 3 (мобайл) ===== */
+@media (max-width: 768px) {
+
+
+    .game3__inner {
+        aspect-ratio: 363 / 480;
+    }
+
+
+    .game3__hint-box {
+        left: 6.34%;
+        top: 2.50%;
+        width: 87.60%;
+        height: 10.21%;
+        border-radius: 3.48vw;
+        padding: 0 3.73vw 0 5.97vw;
+        justify-content: center;
+    }
+
+
+    .game3__hint-text {
+        font-size: 3.13vw;
+        color: var(--pink);
+        width: 56.97vw;
+        text-align: center;
+    }
+
+
+    .game3__capsule-area {
+        left: 7.16%;
+        top: 16.67%;
+        width: 27%;
+        height: 54.79%;
+    }
+
+    .game3__slot-question {
+        font-size: 18.12vw;
+    }
+
+    .game3__lever-area {
+        left: 10.19%;
+        top: 76.67%;
+        width: 17.08%;
+        height: 19.17%;
+    }
+
+
+    .game3__lever-ball {
+        width: 7.21vw;
+        border-width: 0.52vw;
+    }
+
+    .game3__lever-arm {
+        width: 0.52vw;
+    }
+
+    .game3__lever-arm::after {
+        top: 30%;
+    }
+
+    .game3__lever-base {
+        height: 0.52vw;
+    }
+
+
+    .game3__right {
+        left: 42.70%;
+        top: 16.04%;
+        width: 50.14%;
+        height: 78.96%;
+        border-radius: 6.39vw;
+        border: none;
+    }
+
+
+    .game3__text-area {
+        bottom: 6%;
+        left: 20%;
+        width: 76%;
+    }
+
+
+    .game3__name {
+        font-size: 7.65vw;
+    }
+
+    .game3__desc {
+        font-size: 2.26vw;
+    }
+
+}
+
+
+/* ===== Игра 4 (мобайл) ===== */
+@media (max-width: 768px) {
+
+
+    .game4__inner {
+        aspect-ratio: 361 / 301;
+    }
+
+
+    .game4__hint-box {
+        left: 6.09%;
+        top: 4.32%;
+        width: 88.09%;
+        height: 16.28%;
+        border-radius: 3.48vw;
+        padding: 0;
+        justify-content: center;
+    }
+
+
+    .game4__hint-text {
+        font-size: 3.13vw;
+        color: var(--yellow);
+        width: 62.44vw;
+        text-align: center;
+    }
+
+
+    .game4__creature-area {
+        left: 22.44%;
+        width: 50.42%;
+    }
+
+
+    .game4__magnifier {
+        width: 28vw;
+        height: 28.65vw;
+    }
+
+
+    .game4__info {
+        left: 70.36%;
+        top: 25.47%;
+        width: 23.27%;
+    }
+
+    .game4__info-name {
+        font-size: 4.87vw;
+    }
+
+    .game4__info-desc {
+        font-size: 1.44vw;
+    }
+
+}
+
+
+/* ===== Навигация (мобайл) ===== */
+@media (max-width: 768px) {
+
+    .site-nav {
+        padding-top: 3vw;
+    }
+
+    .site-nav__list {
+        gap: 2vw 4vw;
+    }
+
+    .site-nav__link {
+        font-size: 3.5vw;
+    }
+
+}
+
+
+/* ========================================================================
+   ГЛАВНАЯ СТРАНИЦА — мобильный адаптив (max-width: 768px)
+   Десктоп идёт с position:absolute по точным Figma-координатам.
+   На мобиле всё переключаем в естественный поток (position: static)
+   и стэкаем сверху вниз с осмысленными отступами.
+   ======================================================================== */
+
+@media (max-width: 768px) {
+
+    /* --- Контейнер: уходим от фиксированной min-height десктопа --- */
+
+    .page-main {
+        min-height: auto;
+        padding-bottom: 5vw;
+    }
+
+
+    /* --- Навигация на мобиле --- */
+
+    .top-nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 3vw 4vw;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2vw;
+        border-radius: 0;
+    }
+
+    .top-nav__logo img {
+        height: 12vw;
+    }
+
+    .top-nav__list {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw 5vw;
+    }
+
+    .top-nav__link {
+        font-size: 5vw;
+    }
+
+
+    /* --- Hero на мобиле: бубен и плашка идут друг за другом --- */
+
+    .hero-blob {
+        position: static;
+        width: 96vw;
+        margin: 4vw auto 0;
+    }
+
+    .hero-plate {
+        position: static;
+        width: 96vw;
+        height: 50vw;
+        margin: -10vw auto 0;
+    }
+
+    .hero-plate__title {
+        font-size: 8vw;
+        padding: 0 10vw;
+    }
+
+
+    /* --- Инфо-карточка --- */
+
+    .info-card {
+        position: static;
+        width: 96vw;
+        height: 50vw;
+        margin: 5vw auto 0;
+    }
+
+    .info-card__small {
+        font-size: 3vw;
+        line-height: 1.3;
+    }
+
+    .info-card__small--left {
+        top: 5vw;
+        left: 6vw;
+        width: 24vw;
+    }
+
+    .info-card__small--mid {
+        top: 5vw;
+        left: 36vw;
+        width: 24vw;
+    }
+
+    .info-card__small--right {
+        top: 5vw;
+        left: 66vw;
+        width: 24vw;
+    }
+
+    .info-card__divider {
+        /* На мобиле тоже вертикальная пунктирная — позиции пересчитаны под узкий экран */
+        top: 1vw;
+        left: 22vw;
+        width: 3vw;
+        height: 48vw;
+        background-size: 100% 8vw;
+    }
+
+    .info-card__date,
+    .info-card__time {
+        font-size: 9vw;
+    }
+
+    .info-card__date {
+        top: 17vw;
+        left: 18vw;
+    }
+
+    .info-card__time {
+        top: 27vw;
+        left: 18vw;
+    }
+
+
+    /* --- Текст про вход --- */
+
+    .entry-fee {
+        position: static;
+        width: 96vw;
+        height: auto;
+        margin: 5vw auto 0;
+        padding: 0 4vw;
+        font-size: 7vw;
+        line-height: 1.1;
+    }
+
+
+    /* --- Кнопка купить билет --- */
+
+    .buy-button {
+        position: static;
+        width: 92vw;
+        height: auto;
+        margin: 4vw auto 0;
+        padding: 5vw 0;
+        border-radius: 4vw;
+    }
+
+    .buy-button__text {
+        font-size: 8vw;
+    }
+
+
+    /* --- Опрос --- */
+
+    .quiz {
+        position: static;
+        width: 92vw;
+        height: auto;
+        margin: 6vw auto 0;
+        padding: 5vw 5vw;
+        border-radius: 5vw;
+    }
+
+    .quiz__title {
+        position: static;
+        font-size: 9vw;
+        margin-bottom: 4vw;
+    }
+
+    .quiz__arrow {
+        /* На мобиле стрелка остаётся в правом верхнем углу секции */
+        position: absolute;
+        top: 5vw;
+        right: 5vw;
+        left: auto;
+        width: 20vw;
+        height: 14.7vw;
+    }
+
+    .quiz__character {
+        position: static;
+        width: 60vw;
+        margin: 0 auto 4vw;
+        display: block;
+    }
+
+    .quiz__card {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 5vw;
+        border-radius: 4vw;
+    }
+
+    .quiz__question {
+        position: static;
+        width: 100%;
+        font-size: 4.5vw;
+        margin-bottom: 4vw;
+    }
+
+    .quiz__options {
+        position: static;
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .quiz__option {
+        height: auto;
+        font-size: 4vw;
+        padding: 3vw 2vw;
+        border-radius: 5vw;
+    }
+
+    .quiz__feedback {
+        position: static;
+        font-size: 3.5vw;
+        margin-top: 3vw;
+    }
+
+
+    /* --- Космос --- */
+
+    .cosmos {
+        position: static;
+        width: 92vw;
+        height: auto;
+        margin: 6vw auto 0;
+        padding: 5vw;
+        border-radius: 5vw;
+        overflow: hidden;
+    }
+
+    .cosmos__title {
+        position: static;
+        font-size: 9vw;
+        margin-bottom: 3vw;
+    }
+
+    .cosmos__text {
+        position: static;
+        width: 100%;
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+    }
+
+    .cosmos__photo--chair {
+        position: static;
+        width: 95vw;
+        margin: 4vw auto 0;
+        display: block;
+    }
+
+    .cosmos__photo--character {
+        position: static;
+        width: 60vw;
+        margin: -12vw auto 0;
+        display: block;
+    }
+
+
+    /* --- Космонавт --- */
+
+    .cosmonaut-title {
+        position: static;
+        font-size: 9vw;
+        margin: 6vw auto 0;
+        padding: 0 4vw;
+    }
+
+    .cosmonaut-lunchbox {
+        position: static;
+        width: 95vw;
+        margin: 4vw auto 0;
+        display: block;
+    }
+
+    .cosmonaut-cup {
+        position: static;
+        width: 50vw;
+        margin: -12vw 5vw 0 auto;
+        display: block;
+    }
+
+    .cosmonaut-text {
+        position: static;
+        width: 100%;
+        font-size: 3.5vw;
+        margin: 4vw 0 0;
+        padding: 0 4vw;
+    }
+
+
+    /* --- Футер --- */
+
+    .main-footer {
+        position: static;
+        width: 92vw;
+        height: auto;
+        margin: 6vw auto 0;
+        padding: 4vw 5vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5vw;
+        border-radius: 3vw;
+    }
+
+    .main-footer__text {
+        font-size: 3.5vw;
+    }
+
+}
+
+
+/* ===== Кнопка «назад» — адаптив ===== */
+/* На десктопе кнопка маленькая в правом верхнем углу (top:1.5vw, right:1.5vw, 6.4×4.71vw).
+   На адаптиве делаем по тому же принципу — справа сверху, чуть крупнее (т.к. сам экран уже),
+   но не растягиваем до 14vw как было. */
+
+@media (max-width: 768px) {
+
+    .back-btn {
+        top: 2vw;
+        right: 2vw;
+        left: auto;
+        width: 8vw;
+        height: 5.89vw;       /* 123/167 — пропорция SVG */
+    }
+
+}
+
+
+
+.top-nav__hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .page-main {
+        position: relative !important;
+        display: block !important;
+        min-height: 341.19vw !important;     /* доходит ровно до низа жёлтого футера (336.46 + 4.73) */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    .top-nav {
+        position: absolute !important;
+        top: 0 !important;
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 8.46vw !important;
+        padding: 0 3vw !important;
+        border-radius: 0 0 3.91vw 3.91vw !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        margin: 0 !important;
+        z-index: 5 !important;
+        box-sizing: border-box !important;
+    }
+
+    .top-nav__logo {
+        flex-shrink: 0 !important;
+        order: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .top-nav__logo img {
+        height: 4.93vw !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    .top-nav__list {
+        display: none !important;
+    }
+
+    .top-nav.is-open .top-nav__list {
+        display: flex !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: calc(100% + 0.6vw) !important;
+        right: 3vw !important;
+        left: auto !important;
+        background: var(--yellow) !important;
+        margin: 0 !important;
+        padding: 2vw 3vw !important;
+        border-radius: 2vw !important;
+        gap: 1.5vw !important;
+        list-style: none !important;
+        box-shadow: 0 0.5vw 1.5vw rgba(0,0,0,0.25) !important;
+        z-index: 6 !important;
+        width: auto !important;
+        height: auto !important;
+        max-width: 40vw !important;
+    }
+
+    .top-nav.is-open .top-nav__link {
+        font-size: 3vw !important;
+        font-weight: 400 !important;
+        white-space: nowrap !important;
+    }
+
+    .top-nav__hamburger {
+        display: flex !important;
+        position: relative !important;
+        flex-shrink: 0 !important;
+        order: 2 !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        margin: 0 !important;
+        width: 5.89vw !important;
+        height: 5.89vw !important;
+        padding: 1.93vw 1.45vw !important;
+        border: none !important;
+        border-radius: 50% !important;
+        background: var(--pink) !important;
+        cursor: pointer !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: stretch !important;
+        box-sizing: border-box !important;
+        z-index: 6 !important;
+    }
+
+    .top-nav__hamburger span {
+        display: block !important;
+        width: 100% !important;
+        height: 0.48vw !important;
+        background: var(--yellow) !important;
+        border-radius: 5vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .hero-blob {
+        position: absolute !important;
+        top: 17.96vw !important;
+        left: 1.71vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.47vw !important;
+        height: 52.42vw !important;
+        z-index: 1 !important;
+        margin: 0 !important;
+    }
+
+    .hero-blob img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .hero-plate {
+        position: absolute !important;
+        top: 14.31vw !important;
+        left: 2.89vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 76.30vw !important;
+        height: 29.90vw !important;
+        z-index: 3 !important;
+        margin: 0 !important;
+    }
+
+    .hero-plate__bg {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .hero-plate__title {
+        position: absolute !important;
+        inset: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 5.67vw !important;
+        line-height: 1.1 !important;
+        padding: 0 4vw !important;
+        margin: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+    }
+
+    .info-card {
+        position: absolute !important;
+        top: 42.21vw !important;
+        left: 22.31vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 76.30vw !important;
+        height: 29.62vw !important;
+        z-index: 4 !important;
+        margin: 0 !important;
+    }
+
+    .info-card__half {
+        position: absolute !important;
+        inset: 0 !important;
+    }
+
+    .info-card__half--left {
+        clip-path: inset(0 calc(100% - 17.20vw) 0 0) !important;
+    }
+
+    .info-card__half--right {
+        clip-path: inset(0 0 0 17.20vw) !important;
+        transform-origin: 17.20vw 50% !important;
+    }
+
+    .info-card__bg {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .info-card__small {
+        position: absolute !important;
+        font-size: 1.55vw !important;
+        line-height: 1.1 !important;
+    }
+
+    .info-card__small--left {
+        top: 2.50vw !important;
+        left: 3.93vw !important;
+        width: 14.04vw !important;
+    }
+
+    .info-card__small--mid {
+        top: 2.50vw !important;
+        left: 22.31vw !important;
+        width: 19.74vw !important;
+    }
+
+    .info-card__small--right {
+        top: 2.50vw !important;
+        left: 45.78vw !important;
+        width: 21.60vw !important;
+    }
+
+    .info-card__divider {
+        position: absolute !important;
+        top: 0.34vw !important;
+        left: 17.20vw !important;
+        right: auto !important;
+        width: 1.43vw !important;
+        height: 27.39vw !important;
+    }
+
+    .info-card__date {
+        position: absolute !important;
+        top: 10.97vw !important;
+        left: 22.31vw !important;
+        right: auto !important;
+        font-size: 5.67vw !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    .info-card__time {
+        position: absolute !important;
+        top: 17.18vw !important;
+        left: 22.31vw !important;
+        right: auto !important;
+        font-size: 5.67vw !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    .entry-fee {
+        position: absolute !important;
+        top: 77.62vw !important;
+        left: 2.29vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 98.49vw !important;
+        height: 9.44vw !important;
+        font-size: 5.67vw !important;
+        line-height: 1 !important;
+        text-align: left !important;
+        text-transform: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .buy-button {
+        position: absolute !important;
+        top: 86.13vw !important;
+        left: 1.72vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 96.98vw !important;
+        height: 13.96vw !important;
+        border-radius: 2.72vw !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .buy-button__text {
+        font-size: 7.30vw !important;
+        padding: 0 !important;
+        text-align: center !important;
+        line-height: 1 !important;
+    }
+
+    .quiz {
+        position: absolute !important;
+        top: 105.55vw !important;
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 68.79vw !important;
+        border-radius: 3.76vw !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .quiz__title {
+        position: absolute !important;
+        top: 3.22vw !important;
+        left: 18.72vw !important;
+        right: auto !important;
+        width: 57.29vw !important;
+        font-size: 6.45vw !important;
+        line-height: 1 !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    .quiz__arrow {
+        position: absolute !important;
+        top: 0 !important;
+        left: auto !important;
+        right: 0 !important;
+        bottom: auto !important;
+        width: 14.23vw !important;
+        height: 10.48vw !important;
+    }
+
+    .quiz__character {
+        position: absolute !important;
+        top: 13.16vw !important;
+        left: -5.91vw !important;
+        right: auto !important;
+        width: 49.21vw !important;
+        height: 55.63vw !important;
+        overflow: hidden !important;
+    }
+
+    .quiz__character img {
+        content: url('../images/tablet-main-quiz-character.png') !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        object-position: top !important;
+        display: block !important;
+    }
+
+    .quiz__arrow img {
+        content: url('../images/tablet-main-quiz-arrow.svg') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+
+    .quiz__option {
+        text-transform: uppercase !important;
+        font-family: var(--font-title) !important;
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: var(--white) !important;
+        color: #1565C0 !important;
+        border: none !important;
+        padding: 0 1vw !important;
+    }
+
+    .quiz__option--correct {
+        background-color: #4caf50 !important;
+        color: var(--white) !important;
+    }
+
+    .quiz__option--wrong {
+        background-color: var(--pink) !important;
+        color: var(--white) !important;
+    }
+
+    .quiz__card {
+        position: absolute !important;
+        top: 18.81vw !important;
+        left: 36.18vw !important;
+        right: auto !important;
+        width: 61.80vw !important;
+        height: 51.32vw !important;
+        border-radius: 4.49vw 0 4.49vw 0 !important;
+    }
+
+    .quiz__question {
+        position: absolute !important;
+        top: 5.37vw !important;
+        left: 6.99vw !important;
+        right: auto !important;
+        width: 48.51vw !important;
+        font-size: 3.72vw !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    .quiz__options {
+        position: absolute !important;
+        top: 21.13vw !important;
+        left: 7.06vw !important;
+        right: auto !important;
+        width: 41.72vw !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.93vw !important;
+    }
+
+    .quiz__option {
+        height: 6.22vw !important;
+        border-radius: 1.46vw !important;
+        font-size: 2.32vw !important;
+        line-height: 1 !important;
+    }
+
+    .quiz__feedback {
+        position: absolute !important;
+        bottom: 2vw !important;
+        left: 7vw !important;
+        right: 7vw !important;
+        font-size: 2vw !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Cosmos — композитный PNG из самого слоя 56:731 (Frame 4529).
+       Фигма-рендер фрейма со скрытыми title (56:733) и text (56:734) даёт PNG 745.94×611.37,
+       где фоновая плашка, фотки кресла и миски уже спозиционированы точно по фигме.
+       Аналог подхода .immersion на guide.html. Заголовок, описание и стрелка-таб — HTML поверх. */
+    .cosmos {
+        position: absolute !important;
+        top: 180.46vw !important;
+        left: 1.57vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.13vw !important;
+        height: 79.61vw !important;
+        border-radius: 3.75vw !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        background: url('../images/tablet-main-cosmos-bg.png') center/100% 100% no-repeat !important;
+    }
+
+    .cosmos__title {
+        position: absolute !important;
+        top: 3.75vw !important;
+        left: 17.13vw !important;
+        right: auto !important;
+        width: 63.15vw !important;
+        font-size: 6.42vw !important;
+        line-height: 1 !important;
+        text-align: center !important;
+        margin: 0 !important;
+        z-index: 4 !important;
+    }
+
+    .cosmos__arrow {
+        position: absolute !important;
+        top: 0 !important;
+        left: 85.19vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 11.94vw !important;
+        height: 8.80vw !important;
+        z-index: 5 !important;
+    }
+
+    .cosmos__text {
+        position: absolute !important;
+        top: 14.18vw !important;
+        left: 3.48vw !important;
+        right: auto !important;
+        width: 90.17vw !important;
+        font-size: 2.50vw !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+        margin: 0 !important;
+        z-index: 4 !important;
+    }
+
+    /* Отдельные фотки больше не нужны — они уже в композите cosmos-bg.png. */
+    .cosmos__photo--chair,
+    .cosmos__photo--character {
+        display: none !important;
+    }
+
+    /* Заголовок "Будь космонавтом" — Figma 56:665 = одна строка (Days One 50.99 в 533.94×52.73).
+       Russo One шире Days One, поэтому при ширине 534 текст переносится. Растягиваем контейнер
+       на всю ширину и center-аем — текст гарантированно в одну строку и визуально по центру. */
+    .cosmonaut-title {
+        position: absolute !important;
+        top: 266.02vw !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 6.64vw !important;
+        line-height: 1 !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+        margin: 0 !important;
+    }
+
+    .cosmonaut-arrow {
+        position: absolute !important;
+        top: 264vw !important;
+        left: auto !important;
+        right: 2vw !important;
+        bottom: auto !important;
+        width: 9vw !important;
+        height: 6.6vw !important;
+    }
+
+    .cosmonaut-lunchbox {
+        position: absolute !important;
+        top: 270.05vw !important;
+        left: 4.17vw !important;
+        right: auto !important;
+        width: 59.22vw !important;
+        height: 44.42vw !important;
+        margin: 0 !important;
+    }
+
+    .cosmonaut-cup {
+        position: absolute !important;
+        top: 281.21vw !important;
+        left: 56.95vw !important;
+        right: auto !important;
+        width: 30.26vw !important;
+        height: 27.46vw !important;
+        margin: 0 !important;
+    }
+
+    /* Описание — Figma 56:666: переносы как на макете, заданы <br>'ами в HTML.
+       Браузерная Fira Mono чуть шире фигмовской → строки 47 симв. не влезают в
+       573px и переползают, давая 7–8 строк вместо 4. Расширили контейнер до 88vw
+       (~676px) — каждая запланированная строка теперь умещается как одна. */
+    .cosmonaut-text {
+        position: absolute !important;
+        top: 314.45vw !important;
+        left: 6vw !important;
+        right: auto !important;
+        width: 88vw !important;
+        font-size: 2.50vw !important;
+        line-height: 1.13 !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    /* Футер главной — Figma 56:669 (Group 379) для frame 56:664.
+       Визуальное положение жёлтой плашки замерено по рендеру фигмы:
+       top = 2584px, height ≈ 35.5px → 336.46vw / 4.62vw при 768 viewport.
+       Скругление 7.25 → 0.94vw приходится на ВЕРХНИЕ углы (нижние острые,
+       плашка упирается в край страницы). Три текста через space-between. */
+    .page-main .main-footer {
+        position: absolute !important;
+        top: 336.46vw !important;          /* 2584 / 768 */
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 4.73vw !important;
+        border-radius: 0.94vw 0.94vw 0 0 !important;  /* скруглено вверху, остро внизу */
+        padding: 0 4vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+    }
+
+    .page-main .main-footer__text {
+        font-size: 1.39vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+    }
+
+
+    .hero-blob img {
+        content: url('../images/tablet-main-hero-blob.svg') !important;
+    }
+
+    .hero-plate__bg {
+        content: url('../images/tablet-main-hero-plate.svg') !important;
+    }
+
+    .info-card__bg {
+        content: url('../images/tablet-main-info-card-bg.svg') !important;
+    }
+
+    .info-card__divider {
+        display: none !important;
+    }
+
+    .info-card__half--left {
+        clip-path: polygon(0vw 0vw, 17.36vw 0vw, 18.56vw 1vw, 17.36vw 2vw, 18.56vw 3vw, 17.36vw 4vw, 18.56vw 5vw, 17.36vw 6vw, 18.56vw 7vw, 17.36vw 8vw, 18.56vw 9vw, 17.36vw 10vw, 18.56vw 11vw, 17.36vw 12vw, 18.56vw 13vw, 17.36vw 14vw, 18.56vw 15vw, 17.36vw 16vw, 18.56vw 17vw, 17.36vw 18vw, 18.56vw 19vw, 17.36vw 20vw, 18.56vw 21vw, 17.36vw 22vw, 18.56vw 23vw, 17.36vw 24vw, 18.56vw 25vw, 17.36vw 26vw, 18.56vw 27vw, 17.36vw 28vw, 18.56vw 29vw, 0vw 29.62vw) !important;
+    }
+
+    .info-card__half--right {
+        clip-path: polygon(17.36vw 0vw, 100% 0vw, 100% 29.62vw, 18.56vw 29vw, 17.36vw 28vw, 18.56vw 27vw, 17.36vw 26vw, 18.56vw 25vw, 17.36vw 24vw, 18.56vw 23vw, 17.36vw 22vw, 18.56vw 21vw, 17.36vw 20vw, 18.56vw 19vw, 17.36vw 18vw, 18.56vw 17vw, 17.36vw 16vw, 18.56vw 15vw, 17.36vw 14vw, 18.56vw 13vw, 17.36vw 12vw, 18.56vw 11vw, 17.36vw 10vw, 18.56vw 9vw, 17.36vw 8vw, 18.56vw 7vw, 17.36vw 6vw, 18.56vw 5vw, 17.36vw 4vw, 18.56vw 3vw, 17.36vw 2vw, 18.56vw 1vw) !important;
+        transform-origin: 17.96vw 50% !important;
+    }
+
+    .hero-plate__title,
+    .info-card__date,
+    .info-card__time,
+    .info-card__small,
+    .quiz__title,
+    .quiz__question,
+    .quiz__feedback,
+    .cosmos__title,
+    .cosmos__text,
+    .cosmonaut-title,
+    .cosmonaut-text,
+    .buy-button__text,
+    .main-footer__text,
+    .top-nav__link,
+    .entry-fee {
+        font-weight: 400 !important;
+        font-style: normal !important;
+        letter-spacing: 0 !important;
+        text-transform: none !important;
+    }
+
+    .main-footer__text,
+    .entry-fee {
+        text-transform: uppercase !important;
+    }
+
+    .info-card__date,
+    .info-card__time {
+        font-family: var(--font-title) !important;
+    }
+}
+
+
+/* =================================================================
+   ===== О ФЕСТЕ — планшет (Figma 56:1190, frame 768×2992) =====
+   3 карточки жителей с композитными PNG-фонами (заголовок+описание
+   как HTML-overlay), затем блок «Мегапутешествие» с 2 CTA, футер.
+   1px = 100/768 vw. */
+
+@media (max-width: 768px) {
+
+    .page-about {
+        position: relative !important;
+        display: block !important;
+        min-height: 389.58vw !important;     /* 2992 / 768 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* «Наши жители» — Figma 56:1208: x=173, y=102, 421×53, fontSize 55.86, white, centered.
+       Заголовок шире контейнера 421 → растягиваем на 100vw и центруем. */
+    .page-about .residents__title {
+        position: absolute !important;
+        top: 13.28vw !important;             /* 102 / 768 */
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 7.27vw !important;        /* 55.86 / 768 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+    }
+
+    .page-about .residents {
+        position: static !important;
+    }
+
+    .page-about .residents__list {
+        position: static !important;
+        height: 0 !important;
+    }
+
+    /* ===== Карточка жителя — общий каркас (Frame 4535: 747×696.22, cornerRadius 21.17) ===== */
+    .page-about .creature-card {
+        position: absolute !important;
+        left: 1.43vw !important;             /* 11 / 768 */
+        width: 97.27vw !important;           /* 747 / 768 */
+        height: 90.65vw !important;          /* 696.22 / 768 */
+        border-radius: 2.76vw !important;    /* 21.17 / 768 */
+        overflow: hidden !important;
+        background-color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .page-about .creature-card__bg {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+        z-index: 1 !important;
+        pointer-events: none !important;
+    }
+
+    /* Текст-обёртка лежит поверх композитного фона, центрирована в нижней (цветной) половине. */
+    .page-about .creature-card__text {
+        position: absolute !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+        z-index: 2 !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .page-about .creature-card__name {
+        font-size: 6.27vw !important;        /* 48.16 / 768 */
+        line-height: 1 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        text-transform: none !important;
+        margin: 0 auto 1.95vw !important;    /* центрируем + gap до description */
+        padding: 0 !important;
+        letter-spacing: 0 !important;
+    }
+
+    .page-about .creature-card__desc {
+        font-size: 2.39vw !important;        /* 18.36 / 768 */
+        line-height: normal !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        text-transform: none !important;
+        margin: 0 auto 1.5vw !important;
+        padding: 0 !important;
+        letter-spacing: 0 !important;
+    }
+
+    .page-about .creature-card__desc:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    /* ===== Овалус (56:1211) — пинк-сверху, синий-снизу, текст белый.
+       Figma: name w=196.58, desc w=621. ===== */
+    .page-about .creature-card--ovalus {
+        top: 28.52vw !important;             /* 219 / 768 */
+    }
+
+    .page-about .creature-card--ovalus .creature-card__bg {
+        content: url('../images/tablet-about-card-ovalus.png') !important;
+    }
+
+    .page-about .creature-card--ovalus .creature-card__text {
+        top: 55.25vw !important;             /* 424.28 / 768 */
+        color: var(--white) !important;
+    }
+
+    .page-about .creature-card--ovalus .creature-card__name {
+        max-width: 25.60vw !important;       /* 196.58 / 768 */
+    }
+
+    .page-about .creature-card--ovalus .creature-card__desc {
+        max-width: 80.86vw !important;       /* 621 / 768 */
+    }
+
+    /* ===== Дикая корова Сатурна (56:1217) — жёлтый-сверху, пинк-снизу, текст белый.
+       Figma: title 509×46, fontSize 48.16 — но в рендере «Сатурна» переносится на 2-ю строку
+       (Days One/Russo One шире рамки 509). desc w=678. ===== */
+    .page-about .creature-card--cow {
+        top: 124.22vw !important;            /* 954 / 768 */
+    }
+
+    .page-about .creature-card--cow .creature-card__bg {
+        content: url('../images/tablet-about-card-cow.png') !important;
+    }
+
+    .page-about .creature-card--cow .creature-card__text {
+        top: 53.52vw !important;             /* 411 / 768 */
+        color: var(--white) !important;
+    }
+
+    .page-about .creature-card--cow .creature-card__name {
+        max-width: 52vw !important;          /* «Дикая корова» в одну строку, «Сатурна» — на 2-ю */
+    }
+
+    .page-about .creature-card--cow .creature-card__desc {
+        max-width: 88.28vw !important;       /* 678 / 768 */
+    }
+
+    /* ===== Астроптичка (56:1223) — синий-сверху, жёлтый-снизу, текст СИНИЙ.
+       Figma: title 509×46, desc w=678. ===== */
+    .page-about .creature-card--birds {
+        top: 219.40vw !important;            /* 1685 / 768 */
+        left: 1.17vw !important;             /* 9 / 768 */
+    }
+
+    .page-about .creature-card--birds .creature-card__bg {
+        content: url('../images/tablet-about-card-birds.png') !important;
+    }
+
+    .page-about .creature-card--birds .creature-card__text {
+        top: 54.95vw !important;             /* 422 / 768 */
+        color: #1565c0 !important;
+    }
+
+    .page-about .creature-card--birds .creature-card__name {
+        max-width: 66.27vw !important;       /* 509 / 768 */
+    }
+
+    .page-about .creature-card--birds .creature-card__desc {
+        max-width: 88.28vw !important;       /* 678 / 768 */
+    }
+
+
+    /* ===== Мегапутешествие — Figma 88:125, frame 744.79×441.18 в (11, 2427) ===== */
+    .page-about .trip {
+        position: static !important;
+    }
+
+    .page-about .trip__title {
+        position: absolute !important;
+        top: 316.02vw !important;            /* 2427 / 768 */
+        left: 12.97vw !important;            /* (11 + 89) / 768 */
+        right: auto !important;
+        margin: 0 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-size: 7.27vw !important;        /* 55.86 / 768 */
+        line-height: 1 !important;
+        letter-spacing: 0 !important;
+        color: var(--white) !important;
+        text-transform: none !important;
+    }
+
+    .page-about .trip__text {
+        position: absolute !important;
+        top: 329.06vw !important;            /* (2427 + 99.4) / 768 */
+        left: 6.51vw !important;             /* (11 + 39) / 768 */
+        right: auto !important;
+        width: 86.72vw !important;           /* 666 / 768 */
+        margin: 0 !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        font-size: 2.50vw !important;        /* 19.17 / 768 */
+        line-height: normal !important;
+        color: var(--white) !important;
+        letter-spacing: 0 !important;
+        text-align: center !important;
+        text-transform: none !important;
+    }
+
+    /* Большая кнопка-плашка под фигма-блок autoLayout (107.18 высоты). */
+    .page-about .trip__cta {
+        position: absolute !important;
+        left: 1.43vw !important;             /* 11 / 768 */
+        width: 96.98vw !important;           /* 744.79 / 768 */
+        height: 13.96vw !important;          /* 107.18 / 768 */
+        border-radius: 2.72vw !important;    /* 20.89 / 768 */
+        text-decoration: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transition: transform 0.2s ease !important;
+    }
+
+    .page-about .trip__cta-text {
+        display: block !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        font-size: 7.30vw !important;        /* 56.07 / 768 */
+        line-height: 1 !important;
+        letter-spacing: 0 !important;
+        color: var(--white) !important;
+        text-transform: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .page-about .trip__cta--blue {
+        top: 343.10vw !important;            /* (2427 + 208) / 768 = 2635 / 768 */
+        background-color: #1565c0 !important;
+    }
+
+    .page-about .trip__cta--pink {
+        top: 359.51vw !important;            /* (2427 + 334) / 768 = 2761 / 768 */
+        background-color: var(--pink) !important;
+    }
+
+
+    /* ===== Футер о фесте — тот же шаблон что у главной (тоже Group 379 y=2956). ===== */
+    .page-about .main-footer {
+        position: absolute !important;
+        top: 384.90vw !important;            /* 2956 / 768 — визуальный top плашки */
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 4.73vw !important;
+        border-radius: 0.94vw 0.94vw 0 0 !important;
+        padding: 0 4vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-about .main-footer__text {
+        font-size: 1.39vw !important;        /* 10.67 / 768 */
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+
+/* =================================================================
+   ===== Главная — мобайл (Figma 56:67, frame 390×1744) =====
+   Все координаты — frame-local в px. Конвертация: 1px = 100/390 vw.
+   База ассетов — отдельные mobile-main-*.{png,svg}, выгруженные из
+   соответствующих фигма-нод (см. комментарии у элементов). */
+
+@media (max-width: 390px) {
+
+    .page-main {
+        position: relative !important;
+        display: block !important;
+        min-height: 447.18vw !important;     /* до низа жёлтой плашки футера (437.95 + 9.23) */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+
+    /* ===== Шапка — Figma 56:80 (Group 375), 362×65 на жёлтой плашке ===== */
+    .top-nav {
+        position: absolute !important;
+        top: 0 !important;
+        left: 3.59vw !important;             /* 14 / 390 */
+        right: auto !important;
+        width: 92.82vw !important;           /* 362 / 390 */
+        height: 16.67vw !important;          /* 65 / 390 */
+        background: var(--yellow) !important;
+        border-radius: 0 0 3.91vw 3.91vw !important;   /* 15.25 / 390 */
+        padding: 0 3.85vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        z-index: 5 !important;
+    }
+
+    .top-nav__logo {
+        order: 0 !important;
+        margin: 0 !important;
+        width: auto !important;
+        height: auto !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .top-nav__logo img {
+        width: 32.82vw !important;           /* лого ~128 px по фигме */
+        height: auto !important;
+    }
+
+    .top-nav__list {
+        display: none !important;            /* меню скрыто, открывается из гамбургера */
+    }
+
+    /* Кнопка-гамбургер (создаётся JS-кодом) — Figma 56:82 (Ellipse 228) 45.22×45.22 */
+    .top-nav__hamburger {
+        order: 2 !important;
+        width: 11.59vw !important;           /* 45.22 / 390 */
+        height: 11.59vw !important;
+        padding: 3.80vw 2.85vw !important;
+        border-radius: 50% !important;
+        background: var(--pink) !important;
+        border: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: stretch !important;
+        cursor: pointer !important;
+    }
+
+    .top-nav__hamburger span {
+        display: block !important;
+        height: 0.95vw !important;            /* 3.71 / 390 — толщина полоски */
+        background: var(--yellow) !important;
+        border-radius: 1vw !important;
+    }
+
+
+    /* ===== Hero — на мобайле нет жёлтого blob'а позади, только розовая «плашка с выемками» с заголовком ===== */
+    .hero-blob {
+        display: none !important;
+    }
+
+    /* Розовая плашка-билет с заголовком — Figma 56:97 (Group 183), 362×141.83 */
+    .hero-plate {
+        position: absolute !important;
+        top: 29.42vw !important;             /* 114.75 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        width: 92.82vw !important;
+        height: 36.37vw !important;          /* 141.83 / 390 */
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .hero-plate__bg {
+        content: url('../images/mobile-main-hero-plate.svg') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+
+    /* Hero-плашка целиком над существом */
+    .hero-plate {
+        z-index: 3 !important;
+    }
+
+    /* Заголовок «ФЕСТИВАЛЬ КОСМИЧЕСКИХ ЖИВОТНЫХ» — Figma 56:102: x=80, y=129.68, 244×112,
+       fontSize 26.91, lineHeight ≈ 112.57/3/26.91 ≈ 1.40 (3 строки в плашке). */
+    .hero-plate__title {
+        position: absolute !important;
+        top: 3.83vw !important;              /* (129.68-114.75) / 390 */
+        left: 16.92vw !important;            /* (79.98-14) / 390 */
+        right: auto !important;
+        width: 62.65vw !important;           /* 244.30 / 390 */
+        font-size: 6.90vw !important;        /* 26.91 / 390 */
+        line-height: 1.4 !important;         /* по фигме строки расставлены свободно */
+        color: var(--yellow) !important;
+        text-align: left !important;
+        text-transform: uppercase !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    /* ===== Info-card — Figma 56:103 (Group 369), 362×140.57.
+       Две половины с одной и той же композитной PNG-подложкой, обрезанные
+       зигзаг-полигонами по перфорации (x ≈ 21.81vw от левой грани info-card).
+       Перфорация y=85.17 в SVG = 23.5% ширины. Анимация отрыва — через .is-torn в layout.css. ===== */
+    .info-card {
+        position: absolute !important;
+        top: 70.58vw !important;             /* 275.26 / 390 */
+        left: 3.85vw !important;             /* 15 / 390 */
+        right: auto !important;
+        width: 92.82vw !important;
+        height: 36.04vw !important;          /* 140.57 / 390 */
+        margin: 0 !important;
+        padding: 0 !important;
+        background: none !important;
+        overflow: visible !important;
+        z-index: 3 !important;
+        cursor: pointer !important;
+    }
+
+    /* Обе половины — composite-PNG, обрезанный clip-path'ом по зигзагу. */
+    .info-card__half {
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: url('../images/mobile-main-info-card-full.png') center/100% 100% no-repeat !important;
+    }
+
+    /* Левая половина: от (0,0) → зигзаг по x≈21–22.6vw → (0, height).
+       Зубец 1.6vw амплитуда, 2vw полупериод; ~18 зубцов на 36.04vw высоты. */
+    .info-card__half--left {
+        clip-path: polygon(
+            0vw 0vw,
+            21.01vw 0vw,
+            22.61vw 2vw,
+            21.01vw 4vw,
+            22.61vw 6vw,
+            21.01vw 8vw,
+            22.61vw 10vw,
+            21.01vw 12vw,
+            22.61vw 14vw,
+            21.01vw 16vw,
+            22.61vw 18vw,
+            21.01vw 20vw,
+            22.61vw 22vw,
+            21.01vw 24vw,
+            22.61vw 26vw,
+            21.01vw 28vw,
+            22.61vw 30vw,
+            21.01vw 32vw,
+            22.61vw 34vw,
+            21.01vw 36.04vw,
+            0vw 36.04vw
+        ) !important;
+    }
+
+    /* Правая половина: тот же зигзаг — boundary совпадает, при состыковке зубцов не видно.
+       При .is-torn (см. layout.css) сдвигается+поворачивается, зубцы становятся видны. */
+    .info-card__half--right {
+        clip-path: polygon(
+            21.01vw 0vw,
+            100% 0vw,
+            100% 36.04vw,
+            21.01vw 36.04vw,
+            22.61vw 34vw,
+            21.01vw 32vw,
+            22.61vw 30vw,
+            21.01vw 28vw,
+            22.61vw 26vw,
+            21.01vw 24vw,
+            22.61vw 22vw,
+            21.01vw 20vw,
+            22.61vw 18vw,
+            21.01vw 16vw,
+            22.61vw 14vw,
+            21.01vw 12vw,
+            22.61vw 10vw,
+            21.01vw 8vw,
+            22.61vw 6vw,
+            21.01vw 4vw,
+            22.61vw 2vw
+        ) !important;
+        transform-origin: 21.81vw 50% !important;
+    }
+
+    /* Внутренние HTML-тексты — уже запечены в PNG, дубль не нужен. */
+    .info-card__bg,
+    .info-card__divider,
+    .info-card__small,
+    .info-card__date,
+    .info-card__time {
+        display: none !important;
+    }
+
+
+    /* ===== «вход детям до 9 лет 300₽» — Figma 56:78: x=14, y=430, 157×136, fontSize 27, синий.
+       4 строки (вход / детям / до 9 лет / 300₽) принудительно <br>'ами в HTML.
+       По макету текст сидит почти у самого низа секции, перед кнопкой «Купить билет». ===== */
+    .entry-fee {
+        position: absolute !important;
+        top: 125vw !important;                /* ниже info-card с заметным воздухом по макету */
+        left: 3.59vw !important;
+        right: auto !important;
+        width: 36vw !important;
+        font-size: 6.92vw !important;
+        line-height: 1.05 !important;
+        color: #1565c0 !important;
+        text-transform: uppercase !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-family: var(--font-title) !important;
+        z-index: 2 !important;
+    }
+
+    .entry-fee__br {
+        display: inline !important;
+    }
+
+    /* Жёлтое существо — Figma 56:69 (Group 191) с rotation -180°.
+       Должно сидеть в (176, 210) — (326, 575) в координатах фрейма (под билетами).
+       offset = (frame_y - entry_fee_top_in_viewport_vw). */
+    .entry-fee::after {
+        content: '' !important;
+        position: absolute !important;
+        top: -71.15vw !important;             /* 210/390 − 125 = creature top относительно сдвинутого entry-fee */
+        left: 41.54vw !important;             /* (176-14) / 390 */
+        width: 38.46vw !important;            /* 150 / 390 */
+        height: 93.59vw !important;           /* 365 / 390 */
+        background: url('../images/mobile-main-entry-creature.svg') center/contain no-repeat !important;
+        pointer-events: none !important;
+        z-index: -1 !important;
+    }
+
+
+    /* ===== Кнопка «Купить билет» — Figma 56:68: x=14, y=609, 363×56, cornerRadius 14.61 ===== */
+    .buy-button {
+        position: absolute !important;
+        top: 156.15vw !important;            /* 609 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        width: 93.08vw !important;           /* 363 / 390 */
+        height: 14.36vw !important;          /* 56 / 390 */
+        border-radius: 3.75vw !important;    /* 14.61 / 390 */
+        background: var(--pink) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 3 !important;
+    }
+
+    .buy-button__text {
+        font-size: 6.92vw !important;        /* 27 / 390 */
+        line-height: 1 !important;
+        color: var(--yellow) !important;
+        text-transform: none !important;
+        font-family: var(--font-title) !important;
+        margin: 0 !important;
+    }
+
+
+    /* ===== Quiz — Figma 56:115 (Frame 4537), 362×256.
+       Композитный PNG из самого слоя (плашка + персонаж + dark-card + стрелка-таб уже
+       спозиционированы пиксельно). Поверх — title, question, 3 button'а через HTML. ===== */
+    .quiz {
+        position: absolute !important;
+        top: 185.38vw !important;            /* 723 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        width: 92.82vw !important;
+        height: 65.64vw !important;          /* 256 / 390 */
+        border-radius: 3.59vw !important;
+        background: url('../images/mobile-main-quiz-bg.png') center/100% 100% no-repeat !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* «Стань знатоком» — 56:117: x=75, y=12, 213×31, fontSize 24, blue, centered.
+       Координаты в QUIZ-local, не вычитаем frame.left. */
+    .quiz__title {
+        position: absolute !important;
+        top: 3.08vw !important;              /* 12 / 390 */
+        left: 19.23vw !important;            /* 75 / 390 — внутри quiz-frame */
+        right: auto !important;
+        width: 54.62vw !important;           /* 213 / 390 */
+        font-size: 6.15vw !important;        /* 24 / 390 */
+        line-height: 1 !important;
+        color: #1565c0 !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    /* Стрелка-таб, персонаж и фон card'а уже в композитном PNG — скрываем индивидуальные слои. */
+    .quiz__arrow,
+    .quiz__character {
+        display: none !important;
+    }
+
+    /* card остаётся только как ПОЗИЦИОННАЯ обёртка для question/options/feedback —
+       сам фон не рисуем, dark-blue card уже в композитном PNG. */
+    .quiz__card {
+        position: absolute !important;
+        top: 17.95vw !important;             /* 70 / 390 */
+        left: 35.90vw !important;            /* 140 / 390 */
+        right: auto !important;
+        width: 58.97vw !important;           /* 230 / 390 */
+        height: 48.97vw !important;          /* 191 / 390 */
+        background: transparent !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* «Как называется это космическое существо?» — 56:127: fontSize 13.82, cyan */
+    .quiz__question {
+        position: absolute !important;
+        top: 5.13vw !important;              /* (90-70) / 390 */
+        left: 6.67vw !important;             /* (166-140) / 390 */
+        right: auto !important;
+        width: 46.29vw !important;           /* 180.54 / 390 */
+        font-size: 3.55vw !important;        /* 13.82 / 390 */
+        line-height: 1.05 !important;
+        color: var(--cyan) !important;
+        text-align: left !important;
+        margin: 0 !important;
+        z-index: 2 !important;
+    }
+
+    .quiz__options {
+        position: absolute !important;
+        top: 20.16vw !important;             /* (148.63-70) / 390 */
+        left: 6.74vw !important;             /* (166.27-140) / 390 */
+        right: auto !important;
+        width: 39.81vw !important;           /* 155.26 / 390 */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.81vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    .quiz__option {
+        height: 5.94vw !important;           /* 23.15 / 390 */
+        border-radius: 1.39vw !important;    /* 5.44 / 390 */
+        font-size: 2.22vw !important;        /* 8.65 / 390 */
+        line-height: 1 !important;
+        background: var(--white) !important;
+        color: #1565c0 !important;
+        text-transform: uppercase !important;
+        padding: 0 !important;
+        font-weight: 400 !important;
+    }
+
+    .quiz__option--correct {
+        background-color: #4caf50 !important;
+        color: var(--white) !important;
+    }
+
+    .quiz__option--wrong {
+        background-color: var(--pink) !important;
+        color: var(--white) !important;
+    }
+
+    /* Подсказка — JS дорисовывает в .quiz__card после ответа. Лежит внутри card,
+       во всю ширину card минус небольшие отступы, под кнопками ответов. */
+    .quiz__feedback {
+        position: absolute !important;
+        top: auto !important;
+        bottom: 2vw !important;
+        left: 3vw !important;
+        right: 3vw !important;
+        width: auto !important;
+        font-size: 2.4vw !important;
+        line-height: 1.2 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+    }
+
+
+    /* ===== Cosmos — Figma 56:138 (Group 367): 363×297.51.
+       Композитный PNG (миска + кресло + блюз. фон) из Frame 4529 (56:139).
+       Заголовок, описание, стрелка-таб — HTML поверх. ===== */
+    .cosmos {
+        position: absolute !important;
+        top: 260.51vw !important;            /* 1016 / 390 */
+        left: 3.59vw !important;             /* 14 / 390 */
+        right: auto !important;
+        width: 93.08vw !important;           /* 363 / 390 */
+        height: 76.29vw !important;          /* 297.51 / 390 */
+        border-radius: 3.59vw !important;    /* 14 / 390 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background: url('../images/mobile-main-cosmos-bg.png') center/100% 100% no-repeat !important;
+    }
+
+    /* «Попробуй космос» — 56:141: x=64, y=14, 236×27, fontSize 24, cyan */
+    .cosmos__title {
+        position: absolute !important;
+        top: 3.59vw !important;              /* 14 / 390 */
+        left: 12.82vw !important;            /* (64-14) / 390 */
+        right: auto !important;
+        width: 60.51vw !important;           /* 236 / 390 */
+        font-size: 6.15vw !important;
+        line-height: 1 !important;
+        color: var(--cyan) !important;
+        text-align: center !important;
+        margin: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* Стрелка-таб справа — 56:145 (Rectangle 4315) + 56:146 (Union):
+       44.64×32.88, тот же дизайн что и у quiz, отличается только размер. Переиспользуем SVG. */
+    .cosmos__arrow {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        bottom: auto !important;
+        width: 11.45vw !important;           /* 44.64 / 390 */
+        height: 8.43vw !important;           /* 32.88 / 390 */
+        z-index: 3 !important;
+    }
+
+    .cosmos__arrow img {
+        content: url('../images/mobile-main-quiz-arrow.svg') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+
+    /* Описание «На территории фестиваля...» — 56:142: x=13, y=53, 337×44, fontSize 9.36, cyan, centered.
+       На мобайле сокращаем <br>'ы (которые в HTML под планшет) и пускаем естественный перенос. */
+    .cosmos__text {
+        position: absolute !important;
+        top: 13.59vw !important;             /* 53 / 390 */
+        left: -0.26vw !important;            /* (13-14) / 390 */
+        right: auto !important;
+        width: 86.41vw !important;           /* 337 / 390 */
+        font-size: 2.40vw !important;        /* 9.36 / 390 */
+        line-height: 1.15 !important;
+        color: var(--cyan) !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    .cosmos__text br {
+        display: none !important;            /* убираем планшетные переносы — мобайл переносит сам */
+    }
+
+    /* Скрываем отдельные фотки cosmos — они уже встроены в композит. */
+    .cosmos__photo--chair,
+    .cosmos__photo--character {
+        display: none !important;
+    }
+
+
+    /* ===== Cosmonaut — без обёртки, элементы прямо во frame ===== */
+
+    /* Заголовок «Будь космонавтом» — 56:149: x=34, y=1344, 324×32, fontSize 30.94, белый.
+       По фигме — лево-выровненный, x=34 (отступ слева), ширина 324. */
+    .cosmonaut-title {
+        position: absolute !important;
+        top: 344.62vw !important;            /* 1344 / 390 */
+        left: 8.72vw !important;             /* 34 / 390 */
+        right: auto !important;
+        width: 83.08vw !important;           /* 324 / 390 */
+        font-size: 7.93vw !important;        /* 30.94 / 390 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-align: left !important;
+        white-space: nowrap !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* На мобайле нет стрелки cosmonaut (по фигме её просто нет в этом фрейме) — попап открывается с другой страницы. */
+    .cosmonaut-arrow {
+        display: none !important;
+    }
+
+    /* Ланчбокс — 56:152: x=-22, y=1373, 276×207. Сдвинули чуть правее, чтобы визуально
+       выровнять с лево-выровненным заголовком (у PNG есть прозрачная полоса слева). */
+    .cosmonaut-lunchbox {
+        position: absolute !important;
+        top: 352.05vw !important;            /* 1373 / 390 */
+        left: -2.5vw !important;             /* было -5.64vw, сдвинули +3vw вправо */
+        right: auto !important;
+        width: 70.77vw !important;           /* 276 / 390 */
+        height: 53.08vw !important;          /* 207 / 390 */
+        margin: 0 !important;
+    }
+
+    .cosmonaut-lunchbox {
+        content: url('../images/mobile-main-cosmonaut-lunchbox.png') !important;
+    }
+
+    /* Кружка — 56:151: x=224, y=1425, 141×128. */
+    .cosmonaut-cup {
+        position: absolute !important;
+        top: 365.38vw !important;            /* 1425 / 390 */
+        left: 60vw !important;               /* было 57.44vw, сдвинули +2.5vw вправо */
+        right: auto !important;
+        width: 36.15vw !important;           /* 141 / 390 */
+        height: 32.82vw !important;          /* 128 / 390 */
+        margin: 0 !important;
+    }
+
+    .cosmonaut-cup {
+        content: url('../images/mobile-main-cosmonaut-cup.png') !important;
+    }
+
+    /* Описание — 56:150: x=22, y=1572, 348×41, fontSize 13.25, Fira Mono, centered, белый.
+       Скрываем планшетные <br> — пусть мобайл переносит сам. */
+    .cosmonaut-text {
+        position: absolute !important;
+        top: 403.08vw !important;            /* 1572 / 390 */
+        left: 5.64vw !important;             /* 22 / 390 */
+        right: auto !important;
+        width: 89.23vw !important;           /* 348 / 390 */
+        font-size: 3.40vw !important;        /* 13.25 / 390 */
+        line-height: 1.15 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Прячем планшетные <br> (без класса), но оставляем мобильный — для разрыва перед «Эти». */
+    .cosmonaut-text br:not(.cosmonaut-text__br--mobile) {
+        display: none !important;
+    }
+
+    .cosmonaut-text__br--mobile {
+        display: inline !important;
+    }
+
+
+    /* ===== Футер — Figma 56:153 (Group 374): x=14, y=1708, 362×36, скругление сверху ===== */
+    .page-main .main-footer {
+        position: absolute !important;
+        top: 437.95vw !important;            /* 1708 / 390 — визуальный top плашки */
+        left: 3.59vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 92.82vw !important;
+        height: 9.23vw !important;           /* 36 / 390 */
+        border-radius: 3.91vw 3.91vw 0 0 !important;   /* 15.25 / 390 — сверху скруглено */
+        padding: 0 3.33vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-main .main-footer__text {
+        font-size: 1.97vw !important;        /* 7.69 / 390 */
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+    }
+
+
+    /* ===== Сбрасываем синтетический жирный для всех заголовков/текстов на мобайле ===== */
+    .hero-plate__title,
+    .info-card__date,
+    .info-card__time,
+    .info-card__small,
+    .quiz__title,
+    .quiz__question,
+    .quiz__feedback,
+    .cosmos__title,
+    .cosmos__text,
+    .cosmonaut-title,
+    .cosmonaut-text,
+    .buy-button__text,
+    .main-footer__text,
+    .entry-fee {
+        font-weight: 400 !important;
+        font-style: normal !important;
+        letter-spacing: 0 !important;
+    }
+
+}
+
+
+/* =================================================================
+   ===== 404 — планшет (Figma 56:758, frame 768×552) =====
+   Композитный PNG карты (Frame 4536) со скрытыми стрелкой-уголком
+   и white-cutout + HTML overlay back-arrow. 1px = 100/768 vw. */
+
+@media (max-width: 768px) {
+
+    .page-404 {
+        position: relative !important;
+        display: block !important;
+        min-height: 100vh !important;        /* body всегда заполняет viewport: ни хвоста html-канваса, ни жёсткой высоты */
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Розовая карта — Figma 56:776 (Frame 4536): x=10, y=90, 747×450.35, radius 27.49. */
+    .page-404 .page-404__card {
+        position: absolute !important;
+        top: 11.72vw !important;             /* 90 / 768 */
+        left: 1.30vw !important;             /* 10 / 768 */
+        right: auto !important;
+        width: 97.27vw !important;           /* 747 / 768 */
+        height: 58.64vw !important;          /* 450.35 / 768 */
+        margin: 0 !important;
+    }
+
+    .page-404 .page-404__svg {
+        content: url('../images/tablet-404-card.png') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+        border-radius: 3.58vw !important;    /* 27.49 / 768 */
+    }
+
+    /* Back-arrow — приклеена к верхне-правому краю карты как на десктопе. */
+    .page-404 .page-404__back {
+        position: absolute !important;
+        top: 11.72vw !important;             /* выровнен по верху карты */
+        left: auto !important;
+        right: 1.30vw !important;            /* выровнен по правому краю карты */
+        width: 11vw !important;
+        height: 8vw !important;
+        z-index: 10 !important;
+    }
+
+    .page-404 .page-404__back img {
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+}
+
+
+/* =================================================================
+   ===== БИЛЕТЫ — планшет (Figma 56:829, frame 768×1393) =====
+   Композитный PNG со скрытыми «+»-группами + 3 кнопки overlay'ом
+   на свои координаты по фигме. 1px = 100/768 vw. */
+
+@media (max-width: 768px) {
+
+    .page-tickets {
+        position: relative !important;
+        display: block !important;
+        min-height: 181.38vw !important;     /* 1393 / 768 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    .page-tickets .tickets-content {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 181.38vw !important;         /* 1393 / 768 */
+        pointer-events: none !important;
+    }
+
+    .page-tickets .tickets-content__svg {
+        content: url('../images/tablet-tickets-content.png') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+        object-fit: cover !important;
+        object-position: top left !important;
+    }
+
+    /* «+»-кнопки overlay'ом — координаты Figma 56:885/56:895/56:890 */
+    .page-tickets .ticket-plus {
+        width: 17.98vw !important;           /* 138.09 / 768 */
+        height: 22.40vw !important;          /* 172 / 768 */
+        pointer-events: auto !important;
+    }
+
+    /* Взрослый билет: Group 352 (56:885) — x=569.04, y=71.53 в блоке 88:129 (x=10, y=218). */
+    .page-tickets #ticket-plus-adult {
+        top: 37.70vw !important;             /* (218+71.53) / 768 */
+        left: 75.40vw !important;            /* (10+569.04) / 768 */
+    }
+
+    /* Билет малыша: Group 381 (56:895) — x=0, y=71.53 в блоке 88:130 (x=51, y=577). */
+    .page-tickets #ticket-plus-baby {
+        top: 84.44vw !important;             /* (577+71.53) / 768 */
+        left: 6.64vw !important;             /* (51+0) / 768 */
+    }
+
+    /* Детский билет: Group 383 (56:890) — x=569.04, y=71.53 в блоке 88:131 (x=10, y=940). */
+    .page-tickets #ticket-plus-child {
+        top: 131.71vw !important;            /* (940+71.53) / 768 */
+        left: 75.40vw !important;            /* (10+569.04) / 768 */
+    }
+
+    /* ===== Футер билетов — Figma 56:915 (Group 379) y=1357. ===== */
+    .page-tickets .main-footer {
+        position: absolute !important;
+        top: 176.69vw !important;            /* 1357 / 768 */
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 4.73vw !important;
+        border-radius: 0.94vw 0.94vw 0 0 !important;
+        padding: 0 4vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-tickets .main-footer__text {
+        font-size: 1.39vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+
+/* =================================================================
+   ===== ГАЙД — планшет (Figma 56:1026, frame 768×2007) =====
+   3 секции: видео (HTML <video> + SVG play), карта (композит из самого
+   слоя 56:1047), погружение (композит 56:1176 со скрытыми текстами +
+   HTML overlay заголовка и описания) + CTA «Купить гайд» + футер.
+   1px = 100/768 vw. */
+
+@media (max-width: 768px) {
+
+    .page-guide {
+        position: relative !important;
+        display: block !important;
+        min-height: 261.33vw !important;     /* 2007 / 768 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* «Куда сходить?» — Figma 56:1044: x=148, y=115, w=471, fontSize 55.86, white. */
+    .page-guide .guide-section__title {
+        position: absolute !important;
+        top: 14.97vw !important;             /* 115 / 768 */
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 7.27vw !important;        /* 55.86 / 768 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* ===== Видео-блок — Figma 56:1045 (image): x=10, y=218.03, 744.28×430.53, radius 30.79. ===== */
+    .page-guide .video-block {
+        position: absolute !important;
+        top: 28.39vw !important;             /* 218.03 / 768 */
+        left: 1.30vw !important;             /* 10 / 768 */
+        right: auto !important;
+        width: 96.91vw !important;           /* 744.28 / 768 */
+        height: 56.06vw !important;          /* 430.53 / 768 */
+        border-radius: 4.01vw !important;    /* 30.79 / 768 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .page-guide .video-block__video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    /* Play-кнопка (треугольник) — Figma 56:1046: 172.76×172.76, центрируем по видео. */
+    .page-guide .video-block__play {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 22.49vw !important;           /* 172.76 / 768 */
+        height: 22.49vw !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        cursor: pointer !important;
+        z-index: 2 !important;
+    }
+
+    .page-guide .video-block__play svg {
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+
+    /* ===== Карта — Figma 56:1047: композит из самого слоя (синяя плашка + векторная карта). ===== */
+    .page-guide .map-block {
+        position: absolute !important;
+        top: 87.45vw !important;             /* 671.61 / 768 */
+        left: 1.30vw !important;
+        right: auto !important;
+        width: 97.27vw !important;           /* 747 / 768 */
+        height: 56.27vw !important;          /* 432.18 / 768 */
+        border-radius: 2.41vw !important;    /* 18.51 / 768 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .page-guide .map-block img {
+        content: url('../images/tablet-guide-map.png') !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    /* ===== Погружение — Figma 56:1176: композит со скрытыми текстами (бэк + мокапы). ===== */
+    .page-guide .immersion {
+        position: absolute !important;
+        top: 146.54vw !important;            /* 1125.39 / 768 */
+        left: 1.33vw !important;             /* 10.18 / 768 */
+        right: auto !important;
+        width: 96.72vw !important;           /* 742.80 / 768 */
+        height: 84.41vw !important;          /* 648.31 / 768 */
+        border-radius: 3.57vw !important;    /* 27.42 / 768 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .page-guide .immersion__bg {
+        content: url('../images/tablet-guide-immersion.png') !important;
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        z-index: 1 !important;
+        display: block !important;
+    }
+
+    /* Заголовок «Гайд для полного / погружения» — Figma 56:1179: x=34, y=26.8 внутри блока,
+       w=559, fontSize 55.9, color #1565c0 (синий). */
+    .page-guide .immersion__title {
+        position: absolute !important;
+        top: 3.49vw !important;              /* 26.8 / 768 */
+        left: 4.43vw !important;             /* 34 / 768 */
+        right: auto !important;
+        width: 72.79vw !important;           /* 559 / 768 */
+        font-size: 7.27vw !important;        /* 55.86 / 768 */
+        line-height: 1 !important;
+        color: #1565c0 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* Описание под заголовком — Figma 56:1180: x=38.4, y=157.4, w=370.8, fontSize 19.2, blue. */
+    .page-guide .immersion__text {
+        position: absolute !important;
+        top: 20.49vw !important;             /* 157.4 / 768 */
+        left: 5.00vw !important;             /* 38.4 / 768 */
+        right: auto !important;
+        width: 48.28vw !important;           /* 370.8 / 768 */
+        font-size: 2.50vw !important;        /* 19.20 / 768 */
+        line-height: normal !important;
+        color: #1565c0 !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* ===== Кнопка «Купить гайд» — Figma 56:1183: x=144, y=1810, 480×69, fillColor pink. ===== */
+    .page-guide .buy-guide {
+        position: absolute !important;
+        top: 235.68vw !important;            /* 1810 / 768 */
+        left: 18.75vw !important;            /* 144 / 768 */
+        right: auto !important;
+        width: 62.50vw !important;           /* 480 / 768 */
+        height: 8.99vw !important;           /* 69.08 / 768 */
+        border-radius: 1.75vw !important;    /* 13.46 / 768 */
+        background: var(--pink) !important;
+        border: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+    }
+
+    .page-guide .buy-guide__text {
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-size: 4.70vw !important;        /* 36.13 / 768 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* ===== Футер гайда — Figma 56:1184 (Group 379) y=1971 (визуальный top). ===== */
+    .page-guide .main-footer {
+        position: absolute !important;
+        top: 256.64vw !important;            /* 1971 / 768 */
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 4.73vw !important;
+        border-radius: 0.94vw 0.94vw 0 0 !important;
+        padding: 0 4vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-guide .main-footer__text {
+        font-size: 1.39vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+
+/* =================================================================
+   ===== ПРОГРАММА — планшет (Figma 56:1242, frame 768×1904) =====
+   3 цветных блока (Знакомься/Пробуй новое/Развивайся) с композитными PNG
+   (плашка + 3 плаката пиксельно из самого слоя). Заголовок каждого
+   блока — HTML-overlay поверх. 1px = 100/768 vw. */
+
+@media (max-width: 768px) {
+
+    .page-program {
+        position: relative !important;
+        display: block !important;
+        min-height: 247.92vw !important;     /* 1904 / 768 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* «Чем заняться?» — Figma 56:1243: x=153, y=115, w=462, fontSize 55.86, white, по центру. */
+    .page-program .program__title {
+        position: absolute !important;
+        top: 14.97vw !important;             /* 115 / 768 */
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 7.27vw !important;        /* 55.86 / 768 */
+        line-height: 0.882 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* Интро — Figma 56:1244: x=28.05, y=224.87, w=708.25, fontSize 27.44, white. */
+    .page-program .program__intro {
+        position: absolute !important;
+        top: 29.28vw !important;             /* 224.87 / 768 */
+        left: 3.65vw !important;             /* 28.05 / 768 */
+        right: auto !important;
+        width: 92.22vw !important;           /* 708.25 / 768 */
+        font-size: 3.57vw !important;        /* 27.44 / 768 */
+        line-height: normal !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* Планшетные переносы интро по фигма-рендеру (4 строки), десктопный — скрыт. */
+    .program-intro-br {
+        display: inline !important;
+    }
+
+    .desktop-intro-br {
+        display: none !important;
+    }
+
+    .page-program .program {
+        position: static !important;
+    }
+
+    .page-program .program__list {
+        position: static !important;
+        height: 0 !important;
+    }
+
+    /* ===== Карточка раздела — Frame 4548/4547/4546, 747×433.46. ===== */
+    .page-program .program-card {
+        position: absolute !important;
+        left: 1.30vw !important;             /* 10 / 768 — общий для try/grow; meet чуть левее ниже */
+        width: 97.27vw !important;           /* 747 / 768 */
+        height: 56.44vw !important;          /* 433.46 / 768 */
+        border-radius: 3.58vw !important;    /* 27.50 / 768 */
+        overflow: hidden !important;
+        background-color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Заголовок карточки — overlay поверх композитной PNG-подложки. */
+    .page-program .program-card__title {
+        position: absolute !important;
+        top: 1.82vw !important;              /* 14 / 768 — у meet; try/grow на 16 ≈ 2.08vw */
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-size: 6.00vw !important;        /* 46.11 / 768 */
+        line-height: 1 !important;
+        text-align: center !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* Плакаты уже в композите — индивидуальные <img> прячем. */
+    .page-program .program-card__posters,
+    .page-program .program-card__poster {
+        display: none !important;
+    }
+
+    /* Знакомься — Figma 88:128 (y=437), pink composite, yellow title. */
+    .page-program .program-card--meet {
+        top: 56.90vw !important;             /* 437 / 768 */
+        left: 0.26vw !important;             /* 2 / 768 */
+        background: url('../images/tablet-program-meet.png') center/100% 100% no-repeat !important;
+    }
+
+    .page-program .program-card--meet .program-card__title {
+        color: var(--yellow) !important;
+        top: 1.82vw !important;              /* 14 / 768 */
+    }
+
+    /* Пробуй новое — Figma 88:127 (y=892.46), yellow composite, pink title. */
+    .page-program .program-card--try {
+        top: 116.20vw !important;            /* 892.46 / 768 */
+        background: url('../images/tablet-program-try.png') center/100% 100% no-repeat !important;
+    }
+
+    .page-program .program-card--try .program-card__title {
+        color: var(--pink) !important;
+        top: 2.08vw !important;              /* 16 / 768 */
+    }
+
+    /* Развивайся — Figma 88:126 (y=1347.92), blue composite, cyan title. */
+    .page-program .program-card--grow {
+        top: 175.51vw !important;            /* 1347.92 / 768 */
+        background: url('../images/tablet-program-grow.png') center/100% 100% no-repeat !important;
+    }
+
+    .page-program .program-card--grow .program-card__title {
+        color: var(--cyan) !important;
+        top: 2.08vw !important;
+    }
+
+
+    /* ===== Футер программы — Figma 56:1277 (Group 379) y=1868. ===== */
+    .page-program .main-footer {
+        position: absolute !important;
+        top: 243.23vw !important;            /* 1868 / 768 */
+        left: 1.43vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 97.27vw !important;
+        height: 4.73vw !important;
+        border-radius: 0.94vw 0.94vw 0 0 !important;
+        padding: 0 4vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-program .main-footer__text {
+        font-size: 1.39vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+        text-transform: uppercase !important;
+    }
+}
+
+
+/* =================================================================
+   ===== О ФЕСТЕ — мобайл (Figma 56:158, frame 390×2283) =====
+   3 карточки жителей с композитными PNG (заголовки + описания
+   скрыты перед экспортом), затем «Мегапутешествие» с 2 CTA, футер.
+   1px = 100/390 vw. */
+
+@media (max-width: 390px) {
+
+    .page-about {
+        position: relative !important;
+        display: block !important;
+        min-height: 585.38vw !important;     /* 2283 / 390 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* «Наши жители» — Figma 56:159: x=88, y=104, 216×29, fontSize 28.65, white. */
+    .page-about .residents__title {
+        position: absolute !important;
+        top: 26.67vw !important;             /* 104 / 390 */
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 7.35vw !important;        /* 28.65 / 390 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+    }
+
+    .page-about .residents {
+        position: static !important;
+    }
+
+    .page-about .residents__list {
+        position: static !important;
+        height: 0 !important;
+    }
+
+    /* ===== Карточка жителя — общий каркас (Frame 4535/4538/4539: 362×544) ===== */
+    .page-about .creature-card {
+        position: absolute !important;
+        left: 3.59vw !important;             /* 14 / 390 */
+        width: 92.82vw !important;           /* 362 / 390 */
+        height: 139.49vw !important;         /* 544 / 390 */
+        border-radius: 3.31vw !important;    /* 12.92 / 390 */
+        overflow: hidden !important;
+        background-color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .page-about .creature-card__bg {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+        z-index: 1 !important;
+        pointer-events: none !important;
+    }
+
+    /* Текст-обёртка лежит поверх композитного фона, центрирована в нижней цветной половине. */
+    .page-about .creature-card__text {
+        position: absolute !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+        z-index: 2 !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .page-about .creature-card__name {
+        font-size: 7.54vw !important;        /* 29.4 / 390 */
+        line-height: 1 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        text-transform: none !important;
+        margin: 0 auto 2vw !important;
+        padding: 0 !important;
+        letter-spacing: 0 !important;
+    }
+
+    .page-about .creature-card__desc {
+        font-size: 3.93vw !important;        /* 15.33 / 390 */
+        line-height: normal !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        text-transform: none !important;
+        margin: 0 auto 2vw !important;
+        padding: 0 !important;
+        letter-spacing: 0 !important;
+        max-width: 73.85vw !important;       /* 288 / 390 — общий для всех 3 карточек */
+    }
+
+    .page-about .creature-card__desc:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    /* ===== Овалус (56:164) — пинк-сверху, синий-снизу, текст белый.
+       Figma: name «Овалус» x=121, y=267, w=120 (одна строка); desc x=32, y=327, w=288. ===== */
+    .page-about .creature-card--ovalus {
+        top: 40.77vw !important;             /* 159 / 390 */
+    }
+
+    .page-about .creature-card--ovalus .creature-card__bg {
+        content: url('../images/mobile-about-card-ovalus.png') !important;
+    }
+
+    .page-about .creature-card--ovalus .creature-card__text {
+        top: 68.46vw !important;             /* 267 / 390 */
+        color: var(--white) !important;
+    }
+
+    .page-about .creature-card--ovalus .creature-card__name {
+        max-width: 30.77vw !important;       /* 120 / 390 */
+    }
+
+    /* На мобайле описание из mobileLines: <br class="mobile-desc-br"> включается. */
+    .page-about .creature-card__desc .mobile-desc-br {
+        display: inline !important;
+    }
+
+    /* ===== Дикая корова Сатурна (56:170) — жёлтый-сверху, пинк-снизу, текст белый.
+       Figma name x=54, y=257, w=254, h=86 (2 строки: «Дикая корова» / «Сатурна»). ===== */
+    .page-about .creature-card--cow {
+        top: 185.64vw !important;            /* 724 / 390 */
+    }
+
+    .page-about .creature-card--cow .creature-card__bg {
+        content: url('../images/mobile-about-card-cow.png') !important;
+    }
+
+    .page-about .creature-card--cow .creature-card__text {
+        top: 65.90vw !important;             /* 257 / 390 */
+        color: var(--white) !important;
+    }
+
+    .page-about .creature-card--cow .creature-card__name {
+        max-width: 48vw !important;          /* «Дикая корова» влезает, «Сатурна» уезжает на 2-ю */
+    }
+
+    /* ===== Астроптички (56:176) — синий-сверху, жёлтый-снизу, текст СИНИЙ. ===== */
+    .page-about .creature-card--birds {
+        top: 334.10vw !important;            /* 1303 / 390 */
+    }
+
+    .page-about .creature-card--birds .creature-card__bg {
+        content: url('../images/mobile-about-card-birds.png') !important;
+    }
+
+    .page-about .creature-card--birds .creature-card__text {
+        top: 68.21vw !important;             /* 266 / 390 */
+        color: #1565c0 !important;
+    }
+
+    .page-about .creature-card--birds .creature-card__name {
+        max-width: 65.13vw !important;       /* 254 / 390 */
+    }
+
+
+    /* ===== Мегапутешествие — Figma 88:132, frame 362×279 в (14, 1901) ===== */
+    .page-about .trip {
+        position: static !important;
+    }
+
+    .page-about .trip__title {
+        position: absolute !important;
+        top: 487.44vw !important;            /* 1901 / 390 */
+        left: 10vw !important;               /* (14+25) / 390 */
+        right: auto !important;
+        width: 80.26vw !important;           /* 313 / 390 */
+        margin: 0 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-size: 7.93vw !important;        /* 30.94 / 390 */
+        line-height: 1 !important;
+        letter-spacing: 0 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        text-transform: none !important;
+    }
+
+    .page-about .trip__text {
+        position: absolute !important;
+        top: 503.85vw !important;            /* (1901+64) / 390 */
+        left: 6.15vw !important;             /* (14+10) / 390 */
+        right: auto !important;
+        width: 86.15vw !important;           /* 336 / 390 */
+        margin: 0 !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        font-size: 3.40vw !important;        /* 13.25 / 390 */
+        line-height: normal !important;
+        color: var(--white) !important;
+        letter-spacing: 0 !important;
+        text-align: center !important;
+        text-transform: none !important;
+    }
+
+    /* CTA: одинаковая геометрия, отличие — цвет и top. */
+    .page-about .trip__cta {
+        position: absolute !important;
+        left: 3.59vw !important;             /* 14 / 390 */
+        width: 92.56vw !important;           /* 361 / 390 */
+        height: 12.56vw !important;          /* 49 / 390 */
+        border-radius: 2.46vw !important;    /* 9.61 / 390 */
+        text-decoration: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transition: transform 0.2s ease !important;
+    }
+
+    .page-about .trip__cta-text {
+        display: block !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        font-size: 6.62vw !important;        /* 25.8 / 390 */
+        line-height: 1 !important;
+        letter-spacing: 0 !important;
+        color: var(--white) !important;
+        text-transform: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Blue button «Узнать о животных» — Figma 56:163: y=165.99 в frame 88:132. */
+    .page-about .trip__cta--blue {
+        top: 530.00vw !important;            /* (1901+165.99) / 390 = 2066.99/390 */
+        background-color: #1565c0 !important;
+    }
+
+    /* Pink button «Узнать о планетах» — Figma 56:162: y=229.99 в frame 88:132. */
+    .page-about .trip__cta--pink {
+        top: 546.41vw !important;            /* (1901+229.99) / 390 = 2130.99/390 */
+        background-color: var(--pink) !important;
+    }
+
+
+    /* ===== Футер о фесте — Figma 56:200 (Group 374) y=2247 (визуальный top). ===== */
+    .page-about .main-footer {
+        position: absolute !important;
+        top: 576.15vw !important;            /* 2247 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 92.82vw !important;
+        height: 9.23vw !important;           /* 36 / 390 */
+        border-radius: 3.91vw 3.91vw 0 0 !important;   /* 15.25 / 390 */
+        padding: 0 3.33vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-about .main-footer__text {
+        font-size: 1.97vw !important;        /* 7.69 / 390 */
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+
+/* =================================================================
+   ===== 404 — мобайл (Figma 56:245, frame 390×824) =====
+   Композитный PNG карты (Frame 4544) со скрытыми стрелкой-уголком
+   и white-cutout + HTML overlay back-arrow. 1px = 100/390 vw. */
+
+@media (max-width: 390px) {
+
+    .page-404 {
+        position: relative !important;
+        display: block !important;
+        min-height: 100vh !important;        /* body всегда заполняет viewport */
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Розовая карта — Figma 56:246 (Frame 4544): x=14, y=105, 362×679, radius 12.75. */
+    .page-404 .page-404__card {
+        position: absolute !important;
+        top: 26.92vw !important;             /* 105 / 390 */
+        left: 3.59vw !important;             /* 14 / 390 */
+        right: auto !important;
+        width: 92.82vw !important;           /* 362 / 390 */
+        height: 174.10vw !important;         /* 679 / 390 */
+        max-width: none !important;          /* убираем clamp-cap из layout.css */
+        max-height: none !important;
+        margin: 0 !important;
+    }
+
+    .page-404 .page-404__svg {
+        content: url('../images/mobile-404-card.png') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+        border-radius: 3.27vw !important;    /* 12.75 / 390 */
+    }
+
+    /* Back-arrow — приклеена к верхне-правому углу карты.
+       Позиционируем через left (vw), а не right, чтобы при viewport <360px не разъезжалось
+       с картой: body min-width:360 → right отсчитывался бы от края body, а не viewport. */
+    .page-404 .page-404__back {
+        position: absolute !important;
+        top: 26.92vw !important;             /* совпадает с top карты */
+        left: 82.41vw !important;            /* card-right (96.41vw) − ширина стрелки (14vw) */
+        right: auto !important;
+        width: 14vw !important;
+        height: 10vw !important;
+        z-index: 10 !important;
+    }
+
+    .page-404 .page-404__back img {
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+}
+
+
+/* =================================================================
+   ===== БИЛЕТЫ — мобайл (Figma 56:299, frame 390×1398) =====
+   Композитный PNG со скрытыми «+»-группами + 3 кнопки overlay'ом
+   на свои координаты. 1px = 100/390 vw. */
+
+@media (max-width: 390px) {
+
+    .page-tickets {
+        position: relative !important;
+        display: block !important;
+        min-height: 358.46vw !important;     /* 1398 / 390 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    .page-tickets .tickets-content {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 358.46vw !important;
+        pointer-events: none !important;
+    }
+
+    .page-tickets .tickets-content__svg {
+        content: url('../images/mobile-tickets-content.png') !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+        object-fit: cover !important;
+        object-position: top left !important;
+    }
+
+    /* «+»-кнопки overlay'ом — Group 368 у каждого блока: x=113, y=244.999 в блоке.
+       Размеры группы 94.05×117 (включая хвостик «+» вверх). */
+    .page-tickets .ticket-plus {
+        width: 24.12vw !important;           /* 94.05 / 390 */
+        height: 30.00vw !important;          /* 117 / 390 */
+        pointer-events: auto !important;
+    }
+
+    /* Взрослый билет: Block 1 (56:301) x=34, y=205. «+» (56:321) внутри: 113/245. */
+    .page-tickets #ticket-plus-adult {
+        top: 115.38vw !important;            /* (205+245) / 390 */
+        left: 37.69vw !important;            /* (34+113) / 390 */
+    }
+
+    /* Билет малыша: Block 2 (56:326) x=34, y=591. «+» (56:343) внутри: 113/245. */
+    .page-tickets #ticket-plus-baby {
+        top: 214.36vw !important;            /* (591+245) / 390 */
+        left: 37.69vw !important;
+    }
+
+    /* Детский билет: Block 3 (56:348) x=34, y=977. «+» (56:365) внутри: 113/245. */
+    .page-tickets #ticket-plus-child {
+        top: 313.33vw !important;            /* (977+245) / 390 */
+        left: 37.69vw !important;
+    }
+
+    /* ===== Футер билетов — Figma 56:387 (Group 374) y=1362. ===== */
+    .page-tickets .main-footer {
+        position: absolute !important;
+        top: 349.23vw !important;            /* 1362 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 92.82vw !important;
+        height: 9.23vw !important;
+        border-radius: 3.91vw 3.91vw 0 0 !important;
+        padding: 0 3.33vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-tickets .main-footer__text {
+        font-size: 1.97vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+
+/* =================================================================
+   ===== ГАЙД — мобайл (Figma 56:499, frame 390×1556) =====
+   3 секции: видео (HTML <video> + SVG play), карта (композит), погружение
+   (композит со скрытыми текстами + HTML overlay) + CTA + футер. 1px = 100/390 vw. */
+
+@media (max-width: 390px) {
+
+    .page-guide {
+        position: relative !important;
+        display: block !important;
+        min-height: 398.97vw !important;     /* 1556 / 390 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* «Куда сходить?» — Figma 56:500: x=68, y=114.76, w=254, fontSize 31.11, white. */
+    .page-guide .guide-section__title {
+        position: absolute !important;
+        top: 29.43vw !important;             /* 114.76 / 390 */
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 7.98vw !important;        /* 31.11 / 390 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* ===== Видео-блок — Figma 56:501: x=15, y=190, 360.49×208.79, radius 14.92. ===== */
+    .page-guide .video-block {
+        position: absolute !important;
+        top: 48.72vw !important;             /* 190 / 390 */
+        left: 3.85vw !important;             /* 15 / 390 */
+        right: auto !important;
+        width: 92.43vw !important;           /* 360.49 / 390 */
+        height: 53.54vw !important;          /* 208.79 / 390 */
+        border-radius: 3.83vw !important;    /* 14.92 / 390 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .page-guide .video-block__video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    .page-guide .video-block__play {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 21.46vw !important;           /* 83.7 / 390 */
+        height: 21.46vw !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        cursor: pointer !important;
+        z-index: 2 !important;
+    }
+
+    .page-guide .video-block__play svg {
+        width: 100% !important;
+        height: 100% !important;
+        display: block !important;
+    }
+
+    /* ===== Карта — Figma 56:511: композит, 360×449, radius 8.97. ===== */
+    .page-guide .map-block {
+        position: absolute !important;
+        top: 112.86vw !important;            /* 440.16 / 390 */
+        left: 3.85vw !important;
+        right: auto !important;
+        width: 92.31vw !important;           /* 360 / 390 */
+        height: 115.13vw !important;         /* 449 / 390 */
+        border-radius: 2.30vw !important;    /* 8.97 / 390 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .page-guide .map-block img {
+        content: url('../images/mobile-guide-map.png') !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    /* ===== Погружение — Figma 56:504: композит со скрытыми текстами. ===== */
+    .page-guide .immersion {
+        position: absolute !important;
+        top: 241.28vw !important;            /* 941 / 390 */
+        left: 3.85vw !important;
+        right: auto !important;
+        width: 92.27vw !important;           /* 359.87 / 390 */
+        height: 116.95vw !important;         /* 456.09 / 390 */
+        border-radius: 3.41vw !important;    /* 13.29 / 390 */
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .page-guide .immersion__bg {
+        content: url('../images/mobile-guide-immersion.png') !important;
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        z-index: 1 !important;
+        display: block !important;
+    }
+
+    /* Заголовок «Гайд для полного / погружения» — Figma 56:507: x=44.67, y=18.87, w=270.84,
+       fontSize 27.11, color #1565c0 (синий). */
+    .page-guide .immersion__title {
+        position: absolute !important;
+        top: 4.84vw !important;              /* 18.87 / 390 */
+        left: 11.45vw !important;            /* 44.67 / 390 */
+        right: auto !important;
+        width: 69.45vw !important;           /* 270.84 / 390 */
+        font-size: 6.95vw !important;        /* 27.11 / 390 */
+        line-height: 1 !important;
+        color: #1565c0 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* Описание — Figma 56:508: x=34.9, y=76.2, w=290.6, fontSize 9.30, blue. */
+    .page-guide .immersion__text {
+        position: absolute !important;
+        top: 19.54vw !important;             /* 76.2 / 390 */
+        left: 8.95vw !important;             /* 34.9 / 390 */
+        right: auto !important;
+        width: 74.51vw !important;           /* 290.6 / 390 */
+        font-size: 2.38vw !important;        /* 9.30 / 390 */
+        line-height: normal !important;
+        color: #1565c0 !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* ===== Кнопка «Купить гайд» — Figma 56:641: x=15, y=1417.8, 360.1×51.8, pink. ===== */
+    .page-guide .buy-guide {
+        position: absolute !important;
+        top: 363.54vw !important;            /* 1417.8 / 390 */
+        left: 3.85vw !important;
+        right: auto !important;
+        width: 92.33vw !important;           /* 360.1 / 390 */
+        height: 13.28vw !important;          /* 51.80 / 390 */
+        border-radius: 2.46vw !important;    /* 9.61 / 390 */
+        background: var(--pink) !important;
+        border: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+    }
+
+    .page-guide .buy-guide__text {
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-size: 6.95vw !important;        /* 27.11 / 390 */
+        line-height: 1 !important;
+        color: var(--white) !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* ===== Футер гайда — Figma 56:659 (Group 374) y=1522 (визуальный top). ===== */
+    .page-guide .main-footer {
+        position: absolute !important;
+        top: 390.26vw !important;            /* 1522 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 92.82vw !important;
+        height: 9.23vw !important;
+        border-radius: 3.91vw 3.91vw 0 0 !important;
+        padding: 0 3.33vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-guide .main-footer__text {
+        font-size: 1.97vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+
+/* =================================================================
+   ===== ПРОГРАММА — мобайл (Figma 56:205, frame 390×1570) =====
+   3 цветных блока с композитными PNG (плашка + 3 плаката пиксельно
+   из самого слоя). Заголовок каждого блока — HTML-overlay поверх.
+   1px = 100/390 vw. */
+
+@media (max-width: 390px) {
+
+    .page-program {
+        position: relative !important;
+        display: block !important;
+        min-height: 402.56vw !important;     /* 1570 / 390 */
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* «Чем заняться?» — Figma 56:206: x=62, y=120.62, w=263.56, fontSize 31.11, white. */
+    .page-program .program__title {
+        position: absolute !important;
+        top: 30.93vw !important;             /* 120.62 / 390 */
+        left: 0 !important;
+        right: auto !important;
+        width: 100vw !important;
+        font-size: 7.98vw !important;        /* 31.11 / 390 */
+        line-height: 0.882 !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* Интро — Figma 56:207: x=24, y=178, w=342, fontSize 13.25, white. */
+    .page-program .program__intro {
+        position: absolute !important;
+        top: 45.64vw !important;             /* 178 / 390 */
+        left: 6.15vw !important;             /* 24 / 390 */
+        right: auto !important;
+        width: 87.69vw !important;           /* 342 / 390 */
+        font-size: 3.40vw !important;        /* 13.25 / 390 */
+        line-height: normal !important;
+        color: var(--white) !important;
+        text-align: center !important;
+        font-family: 'Fira Mono', monospace !important;
+        font-weight: 400 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* На мобайле — те же переносы что на планшете (4 строки). */
+    .program-intro-br {
+        display: inline !important;
+    }
+
+    .desktop-intro-br {
+        display: none !important;
+    }
+
+    .page-program .program {
+        position: static !important;
+    }
+
+    .page-program .program__list {
+        position: static !important;
+        height: 0 !important;
+    }
+
+    /* ===== Карточка раздела — Frame 4555/4554/4553, 362×359, cornerRadius 12.89. ===== */
+    .page-program .program-card {
+        position: absolute !important;
+        left: 3.59vw !important;             /* 14 / 390 */
+        width: 92.82vw !important;           /* 362 / 390 */
+        height: 92.05vw !important;          /* 359 / 390 */
+        border-radius: 3.30vw !important;    /* 12.89 / 390 */
+        overflow: hidden !important;
+        background-color: transparent !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Заголовок карточки — overlay поверх композитной PNG-подложки. */
+    .page-program .program-card__title {
+        position: absolute !important;
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        font-size: 6.74vw !important;        /* 26.29 / 390 */
+        line-height: 1 !important;
+        text-align: center !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+        z-index: 2 !important;
+    }
+
+    /* Плакаты уже в композите — индивидуальные <img> прячем. */
+    .page-program .program-card__posters,
+    .page-program .program-card__poster {
+        display: none !important;
+    }
+
+    /* Знакомься — Figma 88:135 (y=278), pink composite, yellow title (y=9.15). */
+    .page-program .program-card--meet {
+        top: 71.28vw !important;             /* 278 / 390 */
+        background: url('../images/mobile-program-meet.png') center/100% 100% no-repeat !important;
+    }
+
+    .page-program .program-card--meet .program-card__title {
+        color: var(--yellow) !important;
+        top: 2.35vw !important;              /* 9.15 / 390 */
+    }
+
+    /* Пробуй новое — Figma 88:134 (y=685), yellow composite, pink title (y=8.56). */
+    .page-program .program-card--try {
+        top: 175.64vw !important;            /* 685 / 390 */
+        background: url('../images/mobile-program-try.png') center/100% 100% no-repeat !important;
+    }
+
+    .page-program .program-card--try .program-card__title {
+        color: var(--pink) !important;
+        top: 2.20vw !important;              /* 8.56 / 390 */
+    }
+
+    /* Развивайся — Figma 88:133 (y=1105), blue composite, cyan title (y=5.97). */
+    .page-program .program-card--grow {
+        top: 283.33vw !important;            /* 1105 / 390 */
+        background: url('../images/mobile-program-grow.png') center/100% 100% no-repeat !important;
+    }
+
+    .page-program .program-card--grow .program-card__title {
+        color: var(--cyan) !important;
+        top: 1.53vw !important;              /* 5.97 / 390 */
+    }
+
+
+    /* ===== Футер программы — Figma 56:240 (Group 374) y=1534. ===== */
+    .page-program .main-footer {
+        position: absolute !important;
+        top: 393.33vw !important;            /* 1534 / 390 */
+        left: 3.59vw !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 92.82vw !important;
+        height: 9.23vw !important;
+        border-radius: 3.91vw 3.91vw 0 0 !important;
+        padding: 0 3.33vw !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 0 !important;
+        background: var(--yellow) !important;
+    }
+
+    .page-program .main-footer__text {
+        font-size: 1.97vw !important;
+        line-height: 1 !important;
+        color: var(--pink) !important;
+        white-space: nowrap !important;
+        font-family: var(--font-title) !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+}
