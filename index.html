@@ -41,12 +41,17 @@
         <div class="info-card__half info-card__half--left">
             <img class="info-card__bg" src="images/main-info-card-bg.svg" alt="">
             <span class="info-card__small info-card__small--left">Для&nbsp;детей<br>от&nbsp;3-х лет</span>
+            <!-- Копия пунктира внутри левой половины: clip-path зигзага показывает только её
+                 левую часть. При отрыве правой половины — остаётся на месте. -->
+            <div class="info-card__divider"></div>
         </div>
         <!-- Правая половина: при клике отрывается с лёгким поворотом. -->
         <div class="info-card__half info-card__half--right">
             <img class="info-card__bg" src="images/main-info-card-bg.svg" alt="">
             <span class="info-card__small info-card__small--mid">Первый зоокосмический<br>фестиваль России</span>
             <span class="info-card__small info-card__small--right">Незабываемый опыт<br>и&nbsp;качественное обучение</span>
+            <!-- Копия пунктира внутри правой половины: clip-path зигзага показывает её правую
+                 часть. При отрыве — едет вместе с правой половиной (билет рвётся по перфорации). -->
             <div class="info-card__divider"></div>
             <p class="info-card__date">3–6&nbsp;ИЮЛЯ</p>
             <p class="info-card__time">08:00–22:00</p>
@@ -57,7 +62,7 @@
     <!-- На мобайле текст разбит на 4 строки <br class="entry-fee__br">, как на фигме.
          На планшете и десктопе .entry-fee__br скрывается через display:none — текст
          собирается в одну строку как в тех макетах. -->
-    <p class="entry-fee">вход<br class="entry-fee__br">детям<br class="entry-fee__br">до&nbsp;9&nbsp;лет<br class="entry-fee__br">300₽</p>
+    <p class="entry-fee">вход<br class="entry-fee__br"> детям<br class="entry-fee__br"> до&nbsp;9&nbsp;лет<br class="entry-fee__br"> 300₽</p>
 
 
     <a class="buy-button" href="tickets.html">

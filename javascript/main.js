@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var rightHalf = card.querySelector('.info-card__half--right');
         if (!leftHalf || !rightHalf) return;
 
-        var perforation = 16.74;
+        var perforation = 17.44;
         var amp = 0.6;
         var halfPeriod = 1.2;
         var height = 28.77;

@@ -1926,21 +1926,27 @@
         z-index: 3 !important;
     }
 
-    /* Заголовок «ФЕСТИВАЛЬ КОСМИЧЕСКИХ ЖИВОТНЫХ» — Figma 56:102: x=80, y=129.68, 244×112,
-       fontSize 26.91, lineHeight ≈ 112.57/3/26.91 ≈ 1.40 (3 строки в плашке). */
+    /* Заголовок «ФЕСТИВАЛЬ КОСМИЧЕСКИХ ЖИВОТНЫХ» — Figma 56:102.
+       Центрируем по вертикали flex'ом внутри плашки (cap-height у Russo One не совпадает
+       с figma-меткой box height — фиксированный top давал визуальное смещение вниз). */
     .hero-plate__title {
         position: absolute !important;
-        top: 3.83vw !important;              /* (129.68-114.75) / 390 */
-        left: 16.92vw !important;            /* (79.98-14) / 390 */
-        right: auto !important;
-        width: 62.65vw !important;           /* 244.30 / 390 */
-        font-size: 6.90vw !important;        /* 26.91 / 390 */
-        line-height: 1.4 !important;         /* по фигме строки расставлены свободно */
+        inset: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        padding: 0 16.92vw 0 16.92vw !important;   /* левый край — как был (79.98-14)/390 */
+        font-size: 6.90vw !important;
+        line-height: 1.4 !important;
         color: var(--yellow) !important;
         text-align: left !important;
         text-transform: uppercase !important;
         margin: 0 !important;
-        padding: 0 !important;
     }
 
 
